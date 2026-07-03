@@ -1,0 +1,38 @@
+import type { Metadata } from "next";
+import { getAllWords } from "@/data/woerter";
+import WordCard from "@/components/WordCard";
+
+export const metadata: Metadata = {
+  title: "Wörterliste – alle Substantive mit Artikel",
+  description:
+    "Alphabetische Liste aller Substantive im Artikel-Finder mit der, die oder das.",
+};
+
+export default function WoerterlistePage() {
+  const woerter = [...getAllWords()].sort((a, b) =>
+    a.wort.localeCompare(b.wort, "de")
+  );
+
+  return (
+    <div className="wrap" style={{ padding: "48px 0 80px" }}>
+      <h1 style={{ fontSize: "clamp(30px, 5vw, 44px)", marginBottom: 12 }}>
+        Wörterliste
+      </h1>
+      <p style={{ color: "var(--ink-soft)", maxWidth: 600, marginBottom: 32 }}>
+        {woerter.length} Substantive – alphabetisch sortiert. Klicke auf ein
+        Wort für Artikel, Deklination und Beispielsätze.
+      </p>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
+          gap: 14,
+        }}
+      >
+        {woerter.map((w) => (
+          <WordCard key={w.slug} wort={w} />
+        ))}
+      </div>
+    </div>
+  );
+}
