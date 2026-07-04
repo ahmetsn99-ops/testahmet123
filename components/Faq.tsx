@@ -74,7 +74,6 @@ export default function Faq() {
                 justifyContent: "space-between",
                 alignItems: "center",
                 gap: 12,
-                fontFamily: "var(--body)",
                 fontSize: 16,
                 fontWeight: 600,
                 color: "var(--ink)",

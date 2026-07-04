@@ -5,58 +5,33 @@ import ArticleBadge from "./ArticleBadge";
 export default function WordCard({ wort }: { wort: Wort }) {
   return (
     <Link
-      href={`/artikel/${wort.slug}`}
+      href={`/${wort.artikel}/${wort.slug}`}
       className="card card-hover"
       style={{
         textDecoration: "none",
         color: "var(--ink)",
         display: "block",
-        padding: "20px 20px",
+        padding: "16px 18px",
         position: "relative",
         overflow: "hidden",
       }}
     >
       <span
-        className={`bg-${wort.artikel}`}
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           bottom: 0,
-          width: 4,
+          width: 3,
           background: `var(--${wort.artikel})`,
         }}
       />
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-        }}
-      >
-        <span style={{ fontFamily: "var(--display)", fontSize: 21, fontWeight: 600 }}>
-          {wort.wort}
-        </span>
+      <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <span style={{ fontSize: 19, fontWeight: 700 }}>{wort.wort}</span>
         <ArticleBadge artikel={wort.artikel} size="sm" />
       </div>
-      <p
-        style={{
-          margin: "10px 0 0",
-          fontSize: 13.5,
-          color: "var(--ink-soft)",
-          fontFamily: "var(--mono)",
-        }}
-      >
-        Plural: die {wort.plural} · {wort.niveau}
-      </p>
-      <p
-        style={{
-          margin: "8px 0 0",
-          fontSize: 13.5,
-          color: "var(--ink-soft)",
-        }}
-      >
-        {wort.kategorie}
+      <p style={{ margin: "8px 0 0", fontSize: 13, color: "var(--ink-soft)", fontFamily: "var(--mono)" }}>
+        die {wort.plural} · {wort.niveau}
       </p>
     </Link>
   );

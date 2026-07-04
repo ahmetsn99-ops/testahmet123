@@ -15,17 +15,14 @@ export default function ArticleBadge({
 }) {
   const dims = {
     sm: { font: 13, pad: "4px 12px" },
-    md: { font: 15, pad: "7px 16px" },
-    lg: { font: 20, pad: "10px 22px" },
+    md: { font: 15, pad: "6px 15px" },
+    lg: { font: 20, pad: "9px 20px" },
   }[size];
 
   return (
     <span
       className={`badge tag-${artikel} bg-${artikel}`}
-      style={{
-        fontSize: dims.font,
-        padding: dims.pad,
-      }}
+      style={{ fontSize: dims.font, padding: dims.pad }}
       title={GENUS_LABEL[artikel]}
     >
       {artikel}

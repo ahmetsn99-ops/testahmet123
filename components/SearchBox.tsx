@@ -15,20 +15,14 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
   }, [query, woerter]);
 
   return (
-    <div style={{ position: "relative", maxWidth: 560 }}>
+    <div style={{ position: "relative", maxWidth: 540 }}>
       <form
         onSubmit={(e) => {
           e.preventDefault();
-          if (treffer[0]) router.push(`/artikel/${treffer[0].slug}`);
+          if (treffer[0]) router.push(`/${treffer[0].artikel}/${treffer[0].slug}`);
         }}
-        style={{
-          display: "flex",
-          background: "rgba(255,255,255,0.06)",
-          border: "1px solid rgba(255,255,255,0.14)",
-          backdropFilter: "blur(10px)",
-          borderRadius: 100,
-          padding: 6,
-        }}
+        className="card"
+        style={{ display: "flex", padding: 5, borderRadius: 10 }}
       >
         <input
           value={query}
@@ -39,43 +33,40 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
             flex: 1,
             border: "none",
             background: "transparent",
-            padding: "14px 20px",
-            fontSize: 16.5,
-            fontFamily: "var(--body)",
+            padding: "13px 16px",
+            fontSize: 16,
             outline: "none",
-            color: "var(--ink-inverse)",
+            color: "var(--ink)",
           }}
         />
-        <button type="submit" className="btn btn-primary" style={{ borderRadius: 100 }}>
+        <button type="submit" className="btn btn-primary">
           Suchen
         </button>
       </form>
 
       {treffer.length > 0 && (
         <ul
+          className="card"
           style={{
             listStyle: "none",
-            margin: "10px 0 0",
+            margin: "8px 0 0",
             padding: 6,
             position: "absolute",
             top: "100%",
             left: 0,
             right: 0,
-            background: "var(--bg)",
-            border: "1px solid var(--line)",
-            borderRadius: "var(--radius)",
             zIndex: 10,
-            boxShadow: "var(--shadow-lg)",
+            boxShadow: "var(--shadow)",
           }}
         >
           {treffer.map((w) => (
             <li key={w.slug}>
               <a
-                href={`/artikel/${w.slug}`}
+                href={`/${w.artikel}/${w.slug}`}
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  padding: "12px 14px",
+                  padding: "10px 12px",
                   textDecoration: "none",
                   color: "var(--ink)",
                   fontFamily: "var(--mono)",

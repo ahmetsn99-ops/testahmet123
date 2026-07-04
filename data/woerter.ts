@@ -9,6 +9,12 @@ export interface Deklination {
   genitiv: string;
 }
 
+export interface Redewendung {
+  ausdruck: string;
+  bedeutung: string;
+  beispiel: string;
+}
+
 export interface Wort {
   slug: string;
   wort: string;
@@ -22,6 +28,7 @@ export interface Wort {
   niveau: Niveau;
   synonyme: string[];
   haeufigerFehler: string;
+  redewendungen?: Redewendung[];
   deklinationSingular: Deklination;
   deklinationPlural: Deklination;
   beispielsaetze: string[];
@@ -46,6 +53,18 @@ export const woerter: Wort[] = [
     synonyme: ["die Tafel (veraltet)", "das Pult (Sonderform)"],
     haeufigerFehler:
       "Viele verwechseln 'den Tisch' (Akkusativ) mit 'dem Tisch' (Dativ) – achte auf die Präposition davor: 'auf dem Tisch' aber 'auf den Tisch legen'.",
+    redewendungen: [
+      {
+        ausdruck: "reinen Tisch machen",
+        bedeutung: "eine Sache klären und endgültig bereinigen",
+        beispiel: "Lass uns reinen Tisch machen und offen über alles reden.",
+      },
+      {
+        ausdruck: "jemanden über den Tisch ziehen",
+        bedeutung: "jemanden geschickt übervorteilen",
+        beispiel: "Beim Autokauf hat ihn der Händler über den Tisch gezogen.",
+      },
+    ],
     deklinationSingular: {
       nominativ: "der Tisch",
       akkusativ: "den Tisch",
@@ -281,6 +300,13 @@ export const woerter: Wort[] = [
     synonyme: ["der Kater (männlich)", "das Kätzchen (Jungtier)"],
     haeufigerFehler:
       "Achtung: das männliche Tier heißt 'der Kater', nicht 'der Katze' – das Genus wechselt beim Wort für das Männchen.",
+    redewendungen: [
+      {
+        ausdruck: "die Katze im Sack kaufen",
+        bedeutung: "etwas kaufen, ohne es vorher geprüft zu haben",
+        beispiel: "Kauf das Auto nicht ungesehen, sonst kaufst du die Katze im Sack.",
+      },
+    ],
     deklinationSingular: {
       nominativ: "die Katze",
       akkusativ: "die Katze",
@@ -422,6 +448,10 @@ export const woerter: Wort[] = [
     kategorie: "Orte",
   },
 ];
+
+export function getWordsByArtikel(artikel: Artikel): Wort[] {
+  return woerter.filter((w) => w.artikel === artikel);
+}
 
 export function getAllWords(): Wort[] {
   return woerter;

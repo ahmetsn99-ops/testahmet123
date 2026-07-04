@@ -7,8 +7,8 @@ export default function NotFound() {
       <p style={{ color: "var(--ink-soft)", marginBottom: 24 }}>
         Dieses Substantiv ist noch nicht in unserer Wörterliste.
       </p>
-      <Link href="/artikel" className="btn btn-primary" style={{ display: "inline-flex" }}>
-        Zur Wörterliste →
+      <Link href="/" className="btn btn-primary" style={{ display: "inline-flex" }}>
+        Zur Startseite →
       </Link>
     </div>
   );

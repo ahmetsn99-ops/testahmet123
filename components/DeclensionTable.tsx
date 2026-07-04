@@ -77,5 +77,4 @@ const cell: CSSProperties = {
 
 const cellLabel: CSSProperties = {
   ...cell,
-  fontFamily: "var(--body)",
 };

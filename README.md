@@ -1,6 +1,7 @@
-# Artikel-Finder
+# Artikel Finder
 
-Almanca "der / die / das" artikellerini bulmaya yardımcı olan Next.js (App Router + TypeScript) sitesi.
+Almanca "der / die / das" artikellerini bulmaya yardımcı olan, tek dilli
+(sadece Almanca), hız odaklı Next.js (App Router + TypeScript) sitesi.
 
 ## Kurulum
 
@@ -11,83 +12,97 @@ npm run dev
 
 Tarayıcıda `http://localhost:3000` adresini aç.
 
+## URL yapısı
+
+```
+/                      → Ana sayfa: arama, popüler kelimeler, 3 kategori, kurallar, FAQ
+/der                   → der-Wörter kategori sayfası (tüm maskulin kelimeler)
+/die                   → die-Wörter kategori sayfası (tüm feminin kelimeler)
+/das                   → das-Wörter kategori sayfası (tüm nötr kelimeler)
+/der/tisch             → Kelime içerik sayfası (örnek)
+/die/katze             → Kelime içerik sayfası (örnek)
+/das/haus              → Kelime içerik sayfası (örnek)
+/ueber                 → Hakkımızda
+/sitemap.xml           → Otomatik oluşan site haritası
+/robots.txt            → Otomatik oluşan robots dosyası
+```
+
 ## Proje yapısı
 
 ```
 app/
-  page.tsx                 → Ana sayfa (hero, der/die/das açıklaması, öne çıkan kelimeler, FAQ)
-  artikel/page.tsx         → Tüm kelimelerin listesi (/artikel)
-  artikel/[slug]/page.tsx  → Her kelime için içerik sayfası (/artikel/tisch gibi)
-  ueber/page.tsx           → Hakkımızda sayfası
-  layout.tsx               → Ortak header/footer, fontlar, metadata
-  globals.css              → Renk/tipografi değişkenleri (der=mavi, die=kırmızı, das=yeşil)
+  page.tsx                     → Ana sayfa
+  [artikel]/page.tsx           → Kategori sayfası (der/die/das)
+  [artikel]/[slug]/page.tsx    → Kelime içerik sayfası
+  ueber/page.tsx                → Hakkımızda
+  layout.tsx                    → Header/footer, font, metadata
+  globals.css                   → Renk/tipografi tokenları
+  sitemap.ts / robots.ts        → SEO dosyaları
 
 components/
-  SearchBox.tsx             → Ana sayfadaki canlı arama kutusu (client component)
-  Faq.tsx                    → Akordeon FAQ (client component)
-  DeclensionTable.tsx        → Nominativ/Akkusativ/Dativ/Genitiv tablosu
-  ArticleBadge.tsx           → der/die/das rozeti
-  WordCard.tsx                → Kelime listesi kartı (internal linking için kullanılıyor)
+  SearchBox.tsx        → Canlı arama kutusu (client)
+  Faq.tsx              → Akordeon FAQ (client)
+  DeclensionTable.tsx  → Nominativ/Akkusativ/Dativ/Genitiv tablosu
+  GrammarRulesTable.tsx→ Ek/artikel eşleşme tablosu
+  ArticleBadge.tsx     → der/die/das rozeti
+  WordCard.tsx         → Kelime kartı (iç linkleme için)
+  CopyButton.tsx       → "der Tisch" gibi metni kopyalama butonu (client)
+  AdSlot.tsx           → AdSense yer tutucu
+
+lib/
+  wordFaq.ts     → Her kelime için otomatik 5 soruluk FAQ üretir
+  highlight.tsx  → Örnek cümlelerde kelimeyi vurgular
 
 data/
-  woerter.ts                → Kelime veritabanı (TypeScript, JSON yerine tipli obje dizisi)
+  woerter.ts     → Kelime veritabanı (TypeScript tipli obje dizisi)
 ```
 
 ## Yeni kelime eklemek
 
 `data/woerter.ts` dosyasındaki `woerter` dizisine yeni bir obje eklemen yeterli.
-Her kelime şu alanları içermeli:
+Alanlar: `slug`, `wort`, `artikel` (der/die/das), `genus`, `plural`, `bedeutung`,
+`merksatz` (opsiyonel), `aussprache`, `niveau` (A1/A2/B1), `synonyme`,
+`haeufigerFehler`, `redewendungen` (opsiyonel), `deklinationSingular`,
+`deklinationPlural`, `beispielsaetze` (8 cümle), `verwandt` (iç linkleme
+için slug listesi), `kategorie`.
 
-- `slug`: URL'de kullanılacak kısa isim (örn. `tisch` → `/artikel/tisch`)
-- `wort`, `artikel` (der/die/das), `genus`, `plural`
-- `bedeutung`: basit açıklama
-- `merksatz` (opsiyonel): hatırlatma ipucu
-- `deklinationSingular` / `deklinationPlural`: Nominativ, Akkusativ, Dativ, Genitiv
-- `beispielsaetze`: 8 örnek cümle (dizi)
-- `verwandt`: iç linkleme için ilişkili kelimelerin slug'ları
-- `kategorie`: gruplama için (Möbel, Tiere, vs.)
+Eklendiğinde otomatik olarak:
+- `/[artikel]/[slug]` sayfası oluşur
+- İlgili `/[artikel]` kategori sayfasına eklenir
+- `sitemap.xml`'e eklenir
+- FAQ ve kelime kartları otomatik üretilir
 
-Yeni kelime eklendiğinde:
-- `/artikel/[slug]` sayfası otomatik oluşur (`generateStaticParams` sayesinde)
-- `/artikel` listesine otomatik eklenir
-- Diğer kelimelerin `verwandt` alanına slug'ını ekleyerek iç linkleme kurabilirsin
+## Performans / hız kararları
+
+- Font: sadece **Inter**, `next/font/google` ile derleme sırasında indirilip
+  kendi sunucundan sunuluyor (harici Google Fonts isteği yok → render-blocking yok)
+- Görsel yok, ağır animasyon/gradient yok → düşük CSS/JS yükü
+- Tüm sayfalar `generateStaticParams` ile derleme zamanında statik üretiliyor (SSG)
+- Tek renk paleti + sistem monospace fontu → ekstra font indirmesi yok
+
+## Google AdSense reklamlarını aktif etme
+
+Şu an sitede `components/AdSlot.tsx` ile gösterilen kesikli çizgili kutular sadece
+**yer tutucu**. Gerçek reklamları göstermek için:
+
+1. [google.com/adsense](https://www.google.com/adsense) üzerinden hesap aç.
+2. `app/layout.tsx` içindeki `<head>`e (veya bir `<Script>` bileşenine) AdSense
+   doğrulama script'ini ekle:
+   ```html
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossOrigin="anonymous" />
+   ```
+3. `components/AdSlot.tsx` içindeki yorumdaki gerçek `<ins className="adsbygoogle">`
+   kodunu aktif hale getir, `data-ad-client` / `data-ad-slot` değerlerini kendi
+   panelinden al.
+4. Yer tutucu `className="ad-slot"` çerçevesini kaldır.
 
 ## Yayına alma (deploy)
-
-Proje statik/SSG uyumludur. En kolay yol Vercel:
 
 ```bash
 npm run build
 ```
 
-`npm run build` çalıştıktan sonra Vercel'e bağlayıp deploy edebilir ya da
-`next start` ile kendi sunucunda çalıştırabilirsin.
-
-## Google AdSense reklamlarını aktif etme
-
-Şu an sitede `components/AdSlot.tsx` ile gösterilen kesikli çizgili kutular sadece
-**yer tutucu** (placeholder). Gerçek reklamları göstermek için:
-
-1. [google.com/adsense](https://www.google.com/adsense) üzerinden hesap aç ve site
-   onayını al (onay süreci birkaç gün sürebilir, site canlıda olmalı).
-2. `app/layout.tsx` içindeki `<head>` bölümüne AdSense'in verdiği doğrulama script'ini ekle:
-   ```html
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossOrigin="anonymous" />
-   ```
-3. `components/AdSlot.tsx` içindeki yorum satırındaki gerçek `<ins className="adsbygoogle">`
-   kodunu aktif hale getir, `data-ad-client` ve `data-ad-slot` değerlerini kendi
-   AdSense panelinden aldığın değerlerle değiştir.
-4. Yer tutucu `className="ad-slot"` çerçevesini kaldır.
-
-Reklam alanları şu an ana sayfada (banner + rectangle), kelime listesinde (banner) ve
-her kelime sayfasında (in-content + sidebar) hazır olarak yerleştirilmiş durumda.
-
-## Notlar
-
-- Tasarımda "kütüphane fişi / sözlük" estetiği kullanıldı: der=mavi, die=kırmızı, das=yeşil
-  kenar şeridi ile her kelime kartında artikel anında görülebiliyor.
-- SEO için her kelime sayfasında `generateMetadata` ile başlık/açıklama ve
-  `DefinedTerm` şemasıyla JSON-LD ekleniyor.
-- Fontlar Google Fonts üzerinden yükleniyor (Fraunces, Inter, IBM Plex Mono) —
-  internet bağlantısı gerektirir; offline kullanım için `next/font/google` ile
-  değiştirilebilir.
+Vercel'e bağlayıp otomatik deploy edebilir ya da `next start` ile kendi
+sunucunda çalıştırabilirsin. `app/layout.tsx` ve `app/sitemap.ts` /
+`app/robots.ts` içindeki `artikel-finder.example.de` adresini gerçek alan
+adınla değiştirmeyi unutma.
