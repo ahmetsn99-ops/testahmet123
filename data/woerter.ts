@@ -1,5 +1,6 @@
 export type Artikel = "der" | "die" | "das";
 export type Genus = "maskulin" | "feminin" | "neutrum";
+export type Niveau = "A1" | "A2" | "B1";
 
 export interface Deklination {
   nominativ: string;
@@ -17,6 +18,10 @@ export interface Wort {
   plural: string;
   bedeutung: string;
   merksatz?: string;
+  aussprache: string;
+  niveau: Niveau;
+  synonyme: string[];
+  haeufigerFehler: string;
   deklinationSingular: Deklination;
   deklinationPlural: Deklination;
   beispielsaetze: string[];
@@ -34,7 +39,13 @@ export const woerter: Wort[] = [
     plural: "Tische",
     bedeutung:
       "Ein Tisch ist ein Möbelstück mit einer flachen Platte, auf der man isst, arbeitet oder Dinge abstellt.",
-    merksatz: "Die meisten Möbelstücke, die man 'benutzt' statt 'betritt', sind oft maskulin – wie der Tisch, der Stuhl, der Schrank.",
+    merksatz:
+      "Die meisten Möbelstücke, die man 'benutzt' statt 'betritt', sind oft maskulin – wie der Tisch, der Stuhl, der Schrank.",
+    aussprache: "[tɪʃ]",
+    niveau: "A1",
+    synonyme: ["die Tafel (veraltet)", "das Pult (Sonderform)"],
+    haeufigerFehler:
+      "Viele verwechseln 'den Tisch' (Akkusativ) mit 'dem Tisch' (Dativ) – achte auf die Präposition davor: 'auf dem Tisch' aber 'auf den Tisch legen'.",
     deklinationSingular: {
       nominativ: "der Tisch",
       akkusativ: "den Tisch",
@@ -70,6 +81,11 @@ export const woerter: Wort[] = [
     bedeutung:
       "Ein Stuhl ist ein Sitzmöbel für eine Person, meist mit vier Beinen und einer Lehne.",
     merksatz: "Wie 'der Tisch' gehört auch 'der Stuhl' zu den maskulinen Möbelstücken.",
+    aussprache: "[ʃtuːl]",
+    niveau: "A1",
+    synonyme: ["der Sessel (gepolstert)", "der Hocker (ohne Lehne)"],
+    haeufigerFehler:
+      "Der Plural 'die Stühle' bekommt einen Umlaut (u → ü) – ein Fehler ist 'die Stuhle' ohne Umlaut.",
     deklinationSingular: {
       nominativ: "der Stuhl",
       akkusativ: "den Stuhl",
@@ -102,9 +118,14 @@ export const woerter: Wort[] = [
     genus: "neutrum",
     pluralArtikel: "die",
     plural: "Häuser",
-    bedeutung:
-      "Ein Haus ist ein Gebäude, in dem Menschen wohnen.",
-    merksatz: "Viele Diminutiv-ähnliche oder neutrale Grundwörter für Gebäude wie 'das Haus', 'das Zimmer' sind neutrum.",
+    bedeutung: "Ein Haus ist ein Gebäude, in dem Menschen wohnen.",
+    merksatz:
+      "Viele neutrale Grundwörter für Gebäude wie 'das Haus', 'das Zimmer' sind neutrum.",
+    aussprache: "[haʊs]",
+    niveau: "A1",
+    synonyme: ["das Gebäude", "die Villa (großes Haus)"],
+    haeufigerFehler:
+      "Im Plural ändert sich der Artikel zu 'die Häuser' – 'das Häuser' ist falsch, im Plural gibt es nur noch 'die'.",
     deklinationSingular: {
       nominativ: "das Haus",
       akkusativ: "das Haus",
@@ -139,6 +160,11 @@ export const woerter: Wort[] = [
     plural: "Fenster",
     bedeutung:
       "Ein Fenster ist eine Öffnung in der Wand, meist mit Glas, durch die Licht hereinkommt.",
+    aussprache: "[ˈfɛnstɐ]",
+    niveau: "A1",
+    synonyme: ["die Scheibe (nur das Glas)"],
+    haeufigerFehler:
+      "'Fenster' bleibt im Plural gleich ('die Fenster') – nur der Artikel ändert sich, nicht die Endung.",
     deklinationSingular: {
       nominativ: "das Fenster",
       akkusativ: "das Fenster",
@@ -172,6 +198,11 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Bücher",
     bedeutung: "Ein Buch besteht aus bedruckten oder beschriebenen Seiten, die zusammengebunden sind.",
+    aussprache: "[buːx]",
+    niveau: "A1",
+    synonyme: ["der Roman (Erzählung)", "das Werk (gehoben)"],
+    haeufigerFehler:
+      "Der Genitiv 'des Buches' wird oft zu 'des Buchs' verkürzt – beides ist korrekt, 'des Buches' ist die vollere, formellere Form.",
     deklinationSingular: {
       nominativ: "das Buch",
       akkusativ: "das Buch",
@@ -206,6 +237,11 @@ export const woerter: Wort[] = [
     plural: "Zeitungen",
     bedeutung: "Eine Zeitung ist eine regelmäßig erscheinende Druckschrift mit aktuellen Nachrichten.",
     merksatz: "Wörter mit der Endung -ung sind fast immer feminin, wie 'die Zeitung' oder 'die Übung'.",
+    aussprache: "[ˈtsaɪtʊŋ]",
+    niveau: "A2",
+    synonyme: ["die Presse", "das Blatt (umgangssprachlich)"],
+    haeufigerFehler:
+      "Substantive auf -ung sind so gut wie immer feminin – ein 'der Zeitung' oder 'das Zeitung' ist immer falsch.",
     deklinationSingular: {
       nominativ: "die Zeitung",
       akkusativ: "die Zeitung",
@@ -240,6 +276,11 @@ export const woerter: Wort[] = [
     plural: "Katzen",
     bedeutung: "Eine Katze ist ein kleines, oft als Haustier gehaltenes Raubtier.",
     merksatz: "Wörter mit der Endung -e sind häufig feminin, wie 'die Katze' oder 'die Blume'.",
+    aussprache: "[ˈkatsə]",
+    niveau: "A1",
+    synonyme: ["der Kater (männlich)", "das Kätzchen (Jungtier)"],
+    haeufigerFehler:
+      "Achtung: das männliche Tier heißt 'der Kater', nicht 'der Katze' – das Genus wechselt beim Wort für das Männchen.",
     deklinationSingular: {
       nominativ: "die Katze",
       akkusativ: "die Katze",
@@ -273,6 +314,11 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Hunde",
     bedeutung: "Ein Hund ist ein treues Haustier, das oft als Begleiter oder Wachtier gehalten wird.",
+    aussprache: "[hʊnt]",
+    niveau: "A1",
+    synonyme: ["der Wauwau (Kindersprache)", "der Vierbeiner (umgangssprachlich)"],
+    haeufigerFehler:
+      "Am Wortende steht 'd', aber es wird wie 't' gesprochen ('Hunt'). Im Plural und vor Vokal hört man das 'd' wieder: 'die Hunde'.",
     deklinationSingular: {
       nominativ: "der Hund",
       akkusativ: "den Hund",
@@ -307,6 +353,11 @@ export const woerter: Wort[] = [
     plural: "Blumen",
     bedeutung: "Eine Blume ist eine Pflanze mit auffälligen, oft bunten Blüten.",
     merksatz: "Wie 'die Katze' endet auch 'die Blume' auf -e und ist feminin.",
+    aussprache: "[ˈbluːmə]",
+    niveau: "A1",
+    synonyme: ["die Pflanze (Oberbegriff)", "die Blüte (nur der Blütenteil)"],
+    haeufigerFehler:
+      "Der Plural bekommt ein -n statt -en: 'die Blumen', nicht 'die Blumene'.",
     deklinationSingular: {
       nominativ: "die Blume",
       akkusativ: "die Blume",
@@ -340,6 +391,11 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Schulen",
     bedeutung: "Eine Schule ist eine Bildungseinrichtung, in der Kinder und Jugendliche unterrichtet werden.",
+    aussprache: "[ˈʃuːlə]",
+    niveau: "A1",
+    synonyme: ["die Bildungseinrichtung (formell)", "das Gymnasium (weiterführende Schule)"],
+    haeufigerFehler:
+      "'Zur Schule gehen' braucht Dativ ('zur' = zu der), nicht Akkusativ – ein häufiger Fehler ist 'zur Schule' durch 'in die Schule' korrekt zu ersetzen, je nach Bedeutung.",
     deklinationSingular: {
       nominativ: "die Schule",
       akkusativ: "die Schule",

@@ -38,6 +38,11 @@ export const FAQ_ITEMS: FaqItem[] = [
     antwort:
       "Ja – im Plural verwendet man unabhängig vom Genus immer 'die', zum Beispiel 'der Tisch' wird zu 'die Tische' und 'das Buch' wird zu 'die Bücher'. Der Unterschied zwischen den drei Artikeln existiert also nur im Singular.",
   },
+  {
+    frage: "Was ist der Unterschied zwischen Dativ und Genitiv?",
+    antwort:
+      "Der Dativ beantwortet meist die Frage 'Wem?' und markiert oft ein indirektes Objekt, zum Beispiel bei 'Ich gebe dem Kind das Buch'. Der Genitiv beantwortet 'Wessen?' und zeigt Besitz oder Zugehörigkeit, zum Beispiel 'die Farbe des Autos'. Im gesprochenen Deutsch wird der Genitiv oft durch 'von + Dativ' ersetzt.",
+  },
 ];
 
 export default function Faq() {
@@ -50,10 +55,9 @@ export default function Faq() {
         return (
           <div
             key={item.frage}
+            className="card"
             style={{
-              border: "1px solid var(--line)",
-              borderRadius: "var(--radius)",
-              background: offen ? "var(--paper-dim)" : "var(--paper)",
+              background: offen ? "var(--bg-soft)" : "var(--bg)",
             }}
           >
             <button
@@ -65,7 +69,7 @@ export default function Faq() {
                 background: "none",
                 border: "none",
                 cursor: "pointer",
-                padding: "16px 18px",
+                padding: "18px 20px",
                 display: "flex",
                 justifyContent: "space-between",
                 alignItems: "center",
@@ -78,23 +82,32 @@ export default function Faq() {
             >
               {item.frage}
               <span
+                aria-hidden
                 style={{
-                  fontFamily: "var(--mono)",
-                  color: "var(--der)",
                   flexShrink: 0,
+                  width: 26,
+                  height: 26,
+                  borderRadius: "50%",
+                  display: "grid",
+                  placeItems: "center",
+                  background: "var(--der-dim)",
+                  color: "var(--der)",
+                  fontFamily: "var(--mono)",
+                  transform: offen ? "rotate(45deg)" : "none",
+                  transition: "transform 0.18s ease",
                 }}
               >
-                {offen ? "–" : "+"}
+                +
               </span>
             </button>
             {offen && (
               <p
                 style={{
                   margin: 0,
-                  padding: "0 18px 18px",
+                  padding: "0 20px 20px",
                   color: "var(--ink-soft)",
                   fontSize: 15,
-                  lineHeight: 1.7,
+                  lineHeight: 1.75,
                 }}
               >
                 {item.antwort}

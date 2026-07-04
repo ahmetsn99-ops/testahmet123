@@ -19,15 +19,15 @@ export default function DeclensionTable({
 }) {
   return (
     <div
+      className="card"
       style={{
-        border: "2px solid var(--ink)",
-        borderRadius: "var(--radius)",
         overflow: "hidden",
+        borderTop: `3px solid var(--${artikel})`,
       }}
     >
       <table style={{ width: "100%", borderCollapse: "collapse" }}>
         <thead>
-          <tr style={{ background: "var(--ink)", color: "var(--paper)" }}>
+          <tr style={{ background: "var(--bg-soft)" }}>
             <th style={cellHead}>Fall</th>
             <th style={cellHead}>Singular</th>
             <th style={cellHead}>Plural</th>
@@ -35,16 +35,9 @@ export default function DeclensionTable({
         </thead>
         <tbody>
           {FALLE.map((f, i) => (
-            <tr
-              key={f.key}
-              style={{
-                background: i % 2 === 0 ? "var(--paper)" : "var(--paper-dim)",
-              }}
-            >
+            <tr key={f.key}>
               <td style={cellLabel}>
-                <span style={{ display: "block", fontWeight: 600 }}>
-                  {f.label}
-                </span>
+                <span style={{ display: "block", fontWeight: 600 }}>{f.label}</span>
                 <span
                   style={{
                     fontFamily: "var(--mono)",
@@ -67,15 +60,16 @@ export default function DeclensionTable({
 
 const cellHead: CSSProperties = {
   textAlign: "left",
-  padding: "10px 16px",
+  padding: "14px 20px",
   fontFamily: "var(--mono)",
   fontSize: 12,
   textTransform: "uppercase",
-  letterSpacing: "0.04em",
+  letterSpacing: "0.05em",
+  color: "var(--ink-soft)",
 };
 
 const cell: CSSProperties = {
-  padding: "12px 16px",
+  padding: "14px 20px",
   borderTop: "1px solid var(--line)",
   fontFamily: "var(--mono)",
   fontSize: 15,

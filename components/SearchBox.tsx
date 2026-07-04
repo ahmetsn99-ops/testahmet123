@@ -11,13 +11,11 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
   const treffer = useMemo(() => {
     if (!query.trim()) return [];
     const q = query.trim().toLowerCase();
-    return woerter
-      .filter((w) => w.wort.toLowerCase().includes(q))
-      .slice(0, 6);
+    return woerter.filter((w) => w.wort.toLowerCase().includes(q)).slice(0, 6);
   }, [query, woerter]);
 
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: "relative", maxWidth: 560 }}>
       <form
         onSubmit={(e) => {
           e.preventDefault();
@@ -25,9 +23,11 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
         }}
         style={{
           display: "flex",
-          border: "2px solid var(--ink)",
-          borderRadius: "var(--radius)",
-          overflow: "hidden",
+          background: "rgba(255,255,255,0.06)",
+          border: "1px solid rgba(255,255,255,0.14)",
+          backdropFilter: "blur(10px)",
+          borderRadius: 100,
+          padding: 6,
         }}
       >
         <input
@@ -38,26 +38,15 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
           style={{
             flex: 1,
             border: "none",
-            padding: "16px 18px",
-            fontSize: 17,
+            background: "transparent",
+            padding: "14px 20px",
+            fontSize: 16.5,
             fontFamily: "var(--body)",
             outline: "none",
+            color: "var(--ink-inverse)",
           }}
         />
-        <button
-          type="submit"
-          style={{
-            border: "none",
-            background: "var(--ink)",
-            color: "var(--paper)",
-            padding: "0 24px",
-            fontFamily: "var(--mono)",
-            fontSize: 14,
-            textTransform: "uppercase",
-            letterSpacing: "0.04em",
-            cursor: "pointer",
-          }}
-        >
+        <button type="submit" className="btn btn-primary" style={{ borderRadius: 100 }}>
           Suchen
         </button>
       </form>
@@ -66,17 +55,17 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
         <ul
           style={{
             listStyle: "none",
-            margin: "6px 0 0",
-            padding: 0,
+            margin: "10px 0 0",
+            padding: 6,
             position: "absolute",
             top: "100%",
             left: 0,
             right: 0,
-            background: "var(--paper)",
+            background: "var(--bg)",
             border: "1px solid var(--line)",
             borderRadius: "var(--radius)",
             zIndex: 10,
-            boxShadow: "0 8px 24px rgba(28,27,41,0.08)",
+            boxShadow: "var(--shadow-lg)",
           }}
         >
           {treffer.map((w) => (
@@ -86,12 +75,12 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
                 style={{
                   display: "flex",
                   justifyContent: "space-between",
-                  padding: "12px 16px",
+                  padding: "12px 14px",
                   textDecoration: "none",
                   color: "var(--ink)",
                   fontFamily: "var(--mono)",
                   fontSize: 14,
-                  borderBottom: "1px solid var(--line)",
+                  borderRadius: "var(--radius-sm)",
                 }}
               >
                 <span>{w.wort}</span>

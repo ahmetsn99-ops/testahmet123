@@ -63,6 +63,25 @@ npm run build
 `npm run build` çalıştıktan sonra Vercel'e bağlayıp deploy edebilir ya da
 `next start` ile kendi sunucunda çalıştırabilirsin.
 
+## Google AdSense reklamlarını aktif etme
+
+Şu an sitede `components/AdSlot.tsx` ile gösterilen kesikli çizgili kutular sadece
+**yer tutucu** (placeholder). Gerçek reklamları göstermek için:
+
+1. [google.com/adsense](https://www.google.com/adsense) üzerinden hesap aç ve site
+   onayını al (onay süreci birkaç gün sürebilir, site canlıda olmalı).
+2. `app/layout.tsx` içindeki `<head>` bölümüne AdSense'in verdiği doğrulama script'ini ekle:
+   ```html
+   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXX" crossOrigin="anonymous" />
+   ```
+3. `components/AdSlot.tsx` içindeki yorum satırındaki gerçek `<ins className="adsbygoogle">`
+   kodunu aktif hale getir, `data-ad-client` ve `data-ad-slot` değerlerini kendi
+   AdSense panelinden aldığın değerlerle değiştir.
+4. Yer tutucu `className="ad-slot"` çerçevesini kaldır.
+
+Reklam alanları şu an ana sayfada (banner + rectangle), kelime listesinde (banner) ve
+her kelime sayfasında (in-content + sidebar) hazır olarak yerleştirilmiş durumda.
+
 ## Notlar
 
 - Tasarımda "kütüphane fişi / sözlük" estetiği kullanıldı: der=mavi, die=kırmızı, das=yeşil
