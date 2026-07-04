@@ -64,18 +64,15 @@ export default function SearchBox({ woerter }: { woerter: Wort[] }) {
               <a
                 href={`/${w.artikel}/${w.slug}`}
                 style={{
-                  display: "flex",
-                  justifyContent: "space-between",
+                  display: "block",
                   padding: "10px 12px",
                   textDecoration: "none",
                   color: "var(--ink)",
-                  fontFamily: "var(--mono)",
-                  fontSize: 14,
+                  fontSize: 15,
                   borderRadius: "var(--radius-sm)",
                 }}
               >
-                <span>{w.wort}</span>
-                <span className={`tag-${w.artikel}`}>{w.artikel}</span>
+                {w.wort}
               </a>
             </li>
           ))}
