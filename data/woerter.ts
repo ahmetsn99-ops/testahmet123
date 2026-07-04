@@ -15,6 +15,12 @@ export interface Redewendung {
   beispiel: string;
 }
 
+export interface Wortfamilie {
+  wort: string;
+  artikel: Artikel;
+  bedeutung: string;
+}
+
 export interface Wort {
   slug: string;
   wort: string;
@@ -23,12 +29,14 @@ export interface Wort {
   pluralArtikel: "die";
   plural: string;
   bedeutung: string;
+  englisch: string;
   merksatz?: string;
   aussprache: string;
   niveau: Niveau;
   synonyme: string[];
   haeufigerFehler: string;
   redewendungen?: Redewendung[];
+  wortfamilie?: Wortfamilie[];
   deklinationSingular: Deklination;
   deklinationPlural: Deklination;
   beispielsaetze: string[];
@@ -46,6 +54,7 @@ export const woerter: Wort[] = [
     plural: "Tische",
     bedeutung:
       "Ein Tisch ist ein Möbelstück mit einer flachen Platte, auf der man isst, arbeitet oder Dinge abstellt.",
+    englisch: "table",
     merksatz:
       "Die meisten Möbelstücke, die man 'benutzt' statt 'betritt', sind oft maskulin – wie der Tisch, der Stuhl, der Schrank.",
     aussprache: "[tɪʃ]",
@@ -64,6 +73,11 @@ export const woerter: Wort[] = [
         bedeutung: "jemanden geschickt übervorteilen",
         beispiel: "Beim Autokauf hat ihn der Händler über den Tisch gezogen.",
       },
+    ],
+    wortfamilie: [
+      { wort: "Schreibtisch", artikel: "der", bedeutung: "Tisch zum Arbeiten/Schreiben" },
+      { wort: "Esstisch", artikel: "der", bedeutung: "Tisch zum Essen" },
+      { wort: "Tischdecke", artikel: "die", bedeutung: "Stoff, der über den Tisch gelegt wird" },
     ],
     deklinationSingular: {
       nominativ: "der Tisch",
@@ -99,12 +113,18 @@ export const woerter: Wort[] = [
     plural: "Stühle",
     bedeutung:
       "Ein Stuhl ist ein Sitzmöbel für eine Person, meist mit vier Beinen und einer Lehne.",
+    englisch: "chair",
     merksatz: "Wie 'der Tisch' gehört auch 'der Stuhl' zu den maskulinen Möbelstücken.",
     aussprache: "[ʃtuːl]",
     niveau: "A1",
     synonyme: ["der Sessel (gepolstert)", "der Hocker (ohne Lehne)"],
     haeufigerFehler:
       "Der Plural 'die Stühle' bekommt einen Umlaut (u → ü) – ein Fehler ist 'die Stuhle' ohne Umlaut.",
+    wortfamilie: [
+      { wort: "Rollstuhl", artikel: "der", bedeutung: "Stuhl mit Rädern für Gehbehinderte" },
+      { wort: "Lehnstuhl", artikel: "der", bedeutung: "bequemer Stuhl mit Armlehnen" },
+      { wort: "Stuhllehne", artikel: "die", bedeutung: "der Rückenteil des Stuhls" },
+    ],
     deklinationSingular: {
       nominativ: "der Stuhl",
       akkusativ: "den Stuhl",
@@ -138,6 +158,7 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Häuser",
     bedeutung: "Ein Haus ist ein Gebäude, in dem Menschen wohnen.",
+    englisch: "house",
     merksatz:
       "Viele neutrale Grundwörter für Gebäude wie 'das Haus', 'das Zimmer' sind neutrum.",
     aussprache: "[haʊs]",
@@ -145,6 +166,11 @@ export const woerter: Wort[] = [
     synonyme: ["das Gebäude", "die Villa (großes Haus)"],
     haeufigerFehler:
       "Im Plural ändert sich der Artikel zu 'die Häuser' – 'das Häuser' ist falsch, im Plural gibt es nur noch 'die'.",
+    wortfamilie: [
+      { wort: "Wohnhaus", artikel: "das", bedeutung: "Haus zum Wohnen" },
+      { wort: "Haustür", artikel: "die", bedeutung: "Eingangstür eines Hauses" },
+      { wort: "Krankenhaus", artikel: "das", bedeutung: "Gebäude zur medizinischen Behandlung" },
+    ],
     deklinationSingular: {
       nominativ: "das Haus",
       akkusativ: "das Haus",
@@ -179,11 +205,17 @@ export const woerter: Wort[] = [
     plural: "Fenster",
     bedeutung:
       "Ein Fenster ist eine Öffnung in der Wand, meist mit Glas, durch die Licht hereinkommt.",
+    englisch: "window",
     aussprache: "[ˈfɛnstɐ]",
     niveau: "A1",
     synonyme: ["die Scheibe (nur das Glas)"],
     haeufigerFehler:
       "'Fenster' bleibt im Plural gleich ('die Fenster') – nur der Artikel ändert sich, nicht die Endung.",
+    wortfamilie: [
+      { wort: "Fensterrahmen", artikel: "der", bedeutung: "Rahmen rund um das Fenster" },
+      { wort: "Fensterbank", artikel: "die", bedeutung: "Ablage unter dem Fenster" },
+      { wort: "Fenstergitter", artikel: "das", bedeutung: "Gitter vor dem Fenster" },
+    ],
     deklinationSingular: {
       nominativ: "das Fenster",
       akkusativ: "das Fenster",
@@ -217,11 +249,17 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Bücher",
     bedeutung: "Ein Buch besteht aus bedruckten oder beschriebenen Seiten, die zusammengebunden sind.",
+    englisch: "book",
     aussprache: "[buːx]",
     niveau: "A1",
     synonyme: ["der Roman (Erzählung)", "das Werk (gehoben)"],
     haeufigerFehler:
       "Der Genitiv 'des Buches' wird oft zu 'des Buchs' verkürzt – beides ist korrekt, 'des Buches' ist die vollere, formellere Form.",
+    wortfamilie: [
+      { wort: "Kochbuch", artikel: "das", bedeutung: "Buch mit Rezepten" },
+      { wort: "Buchhandlung", artikel: "die", bedeutung: "Geschäft, das Bücher verkauft" },
+      { wort: "Buchladen", artikel: "der", bedeutung: "Geschäft, das Bücher verkauft (umgangssprachlich)" },
+    ],
     deklinationSingular: {
       nominativ: "das Buch",
       akkusativ: "das Buch",
@@ -255,12 +293,18 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Zeitungen",
     bedeutung: "Eine Zeitung ist eine regelmäßig erscheinende Druckschrift mit aktuellen Nachrichten.",
+    englisch: "newspaper",
     merksatz: "Wörter mit der Endung -ung sind fast immer feminin, wie 'die Zeitung' oder 'die Übung'.",
     aussprache: "[ˈtsaɪtʊŋ]",
     niveau: "A2",
     synonyme: ["die Presse", "das Blatt (umgangssprachlich)"],
     haeufigerFehler:
       "Substantive auf -ung sind so gut wie immer feminin – ein 'der Zeitung' oder 'das Zeitung' ist immer falsch.",
+    wortfamilie: [
+      { wort: "Tageszeitung", artikel: "die", bedeutung: "täglich erscheinende Zeitung" },
+      { wort: "Zeitungsartikel", artikel: "der", bedeutung: "einzelner Beitrag in einer Zeitung" },
+      { wort: "Zeitungspapier", artikel: "das", bedeutung: "Papier, auf dem Zeitungen gedruckt werden" },
+    ],
     deklinationSingular: {
       nominativ: "die Zeitung",
       akkusativ: "die Zeitung",
@@ -294,6 +338,7 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Katzen",
     bedeutung: "Eine Katze ist ein kleines, oft als Haustier gehaltenes Raubtier.",
+    englisch: "cat",
     merksatz: "Wörter mit der Endung -e sind häufig feminin, wie 'die Katze' oder 'die Blume'.",
     aussprache: "[ˈkatsə]",
     niveau: "A1",
@@ -306,6 +351,11 @@ export const woerter: Wort[] = [
         bedeutung: "etwas kaufen, ohne es vorher geprüft zu haben",
         beispiel: "Kauf das Auto nicht ungesehen, sonst kaufst du die Katze im Sack.",
       },
+    ],
+    wortfamilie: [
+      { wort: "Kätzchen", artikel: "das", bedeutung: "junge Katze" },
+      { wort: "Katzenminze", artikel: "die", bedeutung: "Pflanze, die Katzen anzieht" },
+      { wort: "Katzentisch", artikel: "der", bedeutung: "übertragen: unwichtiger Platz am Rand" },
     ],
     deklinationSingular: {
       nominativ: "die Katze",
@@ -340,11 +390,17 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Hunde",
     bedeutung: "Ein Hund ist ein treues Haustier, das oft als Begleiter oder Wachtier gehalten wird.",
+    englisch: "dog",
     aussprache: "[hʊnt]",
     niveau: "A1",
     synonyme: ["der Wauwau (Kindersprache)", "der Vierbeiner (umgangssprachlich)"],
     haeufigerFehler:
       "Am Wortende steht 'd', aber es wird wie 't' gesprochen ('Hunt'). Im Plural und vor Vokal hört man das 'd' wieder: 'die Hunde'.",
+    wortfamilie: [
+      { wort: "Hundehütte", artikel: "die", bedeutung: "kleines Häuschen für den Hund" },
+      { wort: "Hundehalter", artikel: "der", bedeutung: "Person, die einen Hund besitzt" },
+      { wort: "Hundefutter", artikel: "das", bedeutung: "Nahrung für Hunde" },
+    ],
     deklinationSingular: {
       nominativ: "der Hund",
       akkusativ: "den Hund",
@@ -378,12 +434,18 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Blumen",
     bedeutung: "Eine Blume ist eine Pflanze mit auffälligen, oft bunten Blüten.",
+    englisch: "flower",
     merksatz: "Wie 'die Katze' endet auch 'die Blume' auf -e und ist feminin.",
     aussprache: "[ˈbluːmə]",
     niveau: "A1",
     synonyme: ["die Pflanze (Oberbegriff)", "die Blüte (nur der Blütenteil)"],
     haeufigerFehler:
       "Der Plural bekommt ein -n statt -en: 'die Blumen', nicht 'die Blumene'.",
+    wortfamilie: [
+      { wort: "Blumenstrauß", artikel: "der", bedeutung: "gebundene Gruppe von Blumen" },
+      { wort: "Blumentopf", artikel: "der", bedeutung: "Gefäß für eine Blume" },
+      { wort: "Blumenbeet", artikel: "das", bedeutung: "Gartenfläche mit Blumen" },
+    ],
     deklinationSingular: {
       nominativ: "die Blume",
       akkusativ: "die Blume",
@@ -417,11 +479,17 @@ export const woerter: Wort[] = [
     pluralArtikel: "die",
     plural: "Schulen",
     bedeutung: "Eine Schule ist eine Bildungseinrichtung, in der Kinder und Jugendliche unterrichtet werden.",
+    englisch: "school",
     aussprache: "[ˈʃuːlə]",
     niveau: "A1",
     synonyme: ["die Bildungseinrichtung (formell)", "das Gymnasium (weiterführende Schule)"],
     haeufigerFehler:
       "'Zur Schule gehen' braucht Dativ ('zur' = zu der), nicht Akkusativ – ein häufiger Fehler ist 'zur Schule' durch 'in die Schule' korrekt zu ersetzen, je nach Bedeutung.",
+    wortfamilie: [
+      { wort: "Schulhof", artikel: "der", bedeutung: "Freifläche auf dem Schulgelände" },
+      { wort: "Schulbuch", artikel: "das", bedeutung: "Lehrbuch für den Unterricht" },
+      { wort: "Schuluniform", artikel: "die", bedeutung: "einheitliche Kleidung für Schüler" },
+    ],
     deklinationSingular: {
       nominativ: "die Schule",
       akkusativ: "die Schule",

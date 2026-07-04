@@ -1,14 +1,17 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Artikel, getAllWords, getWordBySlug, getRelatedWords } from "@/data/woerter";
+import { Artikel, getAllWords, getWordBySlug, getRelatedWords, getWordsByArtikel } from "@/data/woerter";
 import ArticleBadge from "@/components/ArticleBadge";
 import DeclensionTable from "@/components/DeclensionTable";
 import WordCard from "@/components/WordCard";
 import CopyButton from "@/components/CopyButton";
+import PronounceButton from "@/components/PronounceButton";
+import QuizWidget from "@/components/QuizWidget";
 import AdSlot from "@/components/AdSlot";
 import { buildWortFaq } from "@/lib/wordFaq";
 import { hebeWortHervor } from "@/lib/highlight";
+import { buildAdjektivDeklination } from "@/lib/adjektiv";
 
 const GUELTIGE_ARTIKEL: Artikel[] = ["der", "die", "das"];
 
@@ -41,6 +44,14 @@ export default function WortSeite({
 
   const verwandt = getRelatedWords(wort);
   const faq = buildWortFaq(wort);
+  const adjektiv = buildAdjektivDeklination(wort.deklinationSingular, wort.genus);
+
+  const kategorieWoerter = [...getWordsByArtikel(wort.artikel)].sort((a, b) =>
+    a.wort.localeCompare(b.wort, "de")
+  );
+  const index = kategorieWoerter.findIndex((w) => w.slug === wort.slug);
+  const vorheriges = kategorieWoerter[(index - 1 + kategorieWoerter.length) % kategorieWoerter.length];
+  const naechstes = kategorieWoerter[(index + 1) % kategorieWoerter.length];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -81,7 +92,7 @@ export default function WortSeite({
             <p style={{ fontSize: 17, color: "var(--ink-soft)", maxWidth: 620 }}>
               <strong style={{ color: "var(--ink)" }}>{wort.wort}</strong> ist ein {wort.genus}es
               Substantiv, deshalb lautet der richtige Artikel <strong className={`tag-${wort.artikel}`}>{wort.artikel}</strong>.
-              Plural: die {wort.plural}.
+              Plural: die {wort.plural}. Englisch: {wort.englisch}.
             </p>
           </header>
 
@@ -104,11 +115,12 @@ export default function WortSeite({
               <div>
                 <span style={{ fontSize: 26, fontWeight: 700 }}>{wort.wort}</span>
                 <p style={{ fontFamily: "var(--mono)", fontSize: 13, color: "var(--ink-soft)" }}>
-                  {wort.aussprache} · {wort.niveau}
+                  {wort.aussprache} · {wort.niveau} · {wort.englisch}
                 </p>
               </div>
             </div>
             <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+              <PronounceButton text={`${wort.artikel} ${wort.wort}`} />
               <CopyButton text={`${wort.artikel} ${wort.wort}`} />
             </div>
           </div>
@@ -138,6 +150,22 @@ export default function WortSeite({
               plural={wort.deklinationPlural}
               artikel={wort.artikel}
             />
+          </section>
+
+          {/* ADJEKTIVDEKLINATION */}
+          <section style={{ marginBottom: 36 }}>
+            <h2 style={{ fontSize: 22, marginBottom: 8 }}>
+              Mit Adjektiv: „groß" + {wort.wort}
+            </h2>
+            <p style={{ fontSize: 14, color: "var(--ink-soft)", marginBottom: 14 }}>
+              So verändert sich die Endung des Adjektivs nach dem bestimmten Artikel:
+            </p>
+            <div className="card" style={{ padding: "14px 18px", display: "flex", flexDirection: "column", gap: 6 }}>
+              <ZeileText label="Nominativ" value={adjektiv.nominativ} />
+              <ZeileText label="Akkusativ" value={adjektiv.akkusativ} />
+              <ZeileText label="Dativ" value={adjektiv.dativ} />
+              <ZeileText label="Genitiv" value={adjektiv.genitiv} />
+            </div>
           </section>
 
           {/* TYPISCHER FEHLER */}
@@ -185,9 +213,35 @@ export default function WortSeite({
             </section>
           )}
 
+          {/* WORTFAMILIE */}
+          {wort.wortfamilie && wort.wortfamilie.length > 0 && (
+            <section style={{ marginBottom: 36 }}>
+              <h2 style={{ fontSize: 22, marginBottom: 14 }}>Wortfamilie: Komposita mit {wort.wort}</h2>
+              <p style={{ fontSize: 14, color: "var(--ink-soft)", marginBottom: 14 }}>
+                Zusammengesetzte Wörter richten ihren Artikel nach dem letzten Wortbestandteil.
+              </p>
+              <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 10 }}>
+                {wort.wortfamilie.map((k) => (
+                  <div key={k.wort} className="card" style={{ padding: "14px 16px" }}>
+                    <span className={`tag-${k.artikel}`} style={{ fontFamily: "var(--mono)", fontWeight: 700 }}>
+                      {k.artikel}
+                    </span>{" "}
+                    <strong>{k.wort}</strong>
+                    <p style={{ fontSize: 13.5, color: "var(--ink-soft)", marginTop: 6 }}>{k.bedeutung}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          )}
+
           <div style={{ marginBottom: 36 }}>
             <AdSlot label="Anzeige · In-Content" height={120} variant="rectangle" />
           </div>
+
+          {/* QUIZ */}
+          <section style={{ marginBottom: 36 }}>
+            <QuizWidget wort={wort.wort} artikel={wort.artikel} />
+          </section>
 
           {/* FAQ */}
           <section style={{ marginBottom: 36 }}>
@@ -206,7 +260,7 @@ export default function WortSeite({
 
           {/* VERWANDTE WÖRTER */}
           {verwandt.length > 0 && (
-            <section>
+            <section style={{ marginBottom: 36 }}>
               <h2 style={{ fontSize: 22, marginBottom: 14 }}>Ähnliche Wörter</h2>
               <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(190px, 1fr))", gap: 12 }}>
                 {verwandt.map((w) => (
@@ -215,6 +269,16 @@ export default function WortSeite({
               </div>
             </section>
           )}
+
+          {/* PREV/NEXT */}
+          <nav style={{ display: "flex", justifyContent: "space-between", gap: 12, paddingTop: 20, borderTop: "1px solid var(--line)" }}>
+            <Link href={`/${vorheriges.artikel}/${vorheriges.slug}`} style={{ textDecoration: "none", fontSize: 14.5, color: "var(--ink-soft)" }}>
+              ← {vorheriges.wort}
+            </Link>
+            <Link href={`/${naechstes.artikel}/${naechstes.slug}`} style={{ textDecoration: "none", fontSize: 14.5, color: "var(--ink-soft)" }}>
+              {naechstes.wort} →
+            </Link>
+          </nav>
         </div>
 
         {/* SIDEBAR */}
@@ -224,6 +288,7 @@ export default function WortSeite({
             <Zeile label="Artikel" value={wort.artikel} />
             <Zeile label="Genus" value={wort.genus} />
             <Zeile label="Plural" value={`die ${wort.plural}`} />
+            <Zeile label="Englisch" value={wort.englisch} />
             <Zeile label="Niveau" value={wort.niveau} />
             <Zeile label="Kategorie" value={wort.kategorie} />
             {wort.synonyme.length > 0 && (
@@ -251,6 +316,17 @@ function Zeile({ label, value }: { label: string; value: string }) {
     <div style={{ display: "flex", justifyContent: "space-between", padding: "7px 0", fontSize: 14.5 }}>
       <span style={{ color: "var(--ink-soft)" }}>{label}</span>
       <strong>{value}</strong>
+    </div>
+  );
+}
+
+function ZeileText({ label, value }: { label: string; value: string }) {
+  return (
+    <div style={{ display: "flex", gap: 10, fontSize: 14.5 }}>
+      <span style={{ color: "var(--ink-soft)", minWidth: 90, fontFamily: "var(--mono)", fontSize: 12.5, textTransform: "uppercase", paddingTop: 2 }}>
+        {label}
+      </span>
+      <span>{value}</span>
     </div>
   );
 }
