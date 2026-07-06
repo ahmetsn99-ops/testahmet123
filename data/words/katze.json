@@ -1,0 +1,42 @@
+{
+  "slug": "katze",
+  "wort": "Katze",
+  "artikel": "die",
+  "plural": "Katzen",
+  "genitiv_singular": "Katze",
+  "kategorie": "hayvan",
+  "haeufigkeit_rang": 511,
+  "saetze": [
+    "Die Katze schläft auf dem Sofa.",
+    "Ich füttere die Katze.",
+    "Ich spiele mit der Katze.",
+    "Der Schwanz der Katze ist lang.",
+    "Die Katzen leben im Wald.",
+    "Wir beobachten die Katzen.",
+    "Das ist eine kleiner Katze.",
+    "Wir haben eine neuen Katze.",
+    "Die Katze läuft schnell.",
+    "Neben der Katze sitzt ein Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Katze\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kedi",
+    "en": "cat",
+    "ar": "قطة",
+    "es": "gato",
+    "fr": "chat",
+    "it": "gatto",
+    "ru": "кошка",
+    "pt": "gato",
+    "nl": "kat",
+    "pl": "kot"
+  }
+}

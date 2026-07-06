@@ -1,0 +1,42 @@
+{
+  "slug": "kind",
+  "wort": "Kind",
+  "artikel": "das",
+  "plural": "Kinder",
+  "genitiv_singular": "Kindes",
+  "kategorie": "insan",
+  "haeufigkeit_rang": 37,
+  "saetze": [
+    "Das Kind arbeitet jeden Tag.",
+    "Ich kenne das Kind.",
+    "Ich spreche mit dem Kind.",
+    "Der Name des Kindes ist bekannt.",
+    "Die Kinder treffen sich oft.",
+    "Wir helfen den Kinder.",
+    "Das ist ein freundlicher Kind.",
+    "Ich habe ein guten Kind.",
+    "Das Kind wohnt in der Stadt.",
+    "Ich vertraue dem Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Kind\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "çocuk",
+    "en": "child",
+    "ar": "طفل",
+    "es": "niño",
+    "fr": "enfant",
+    "it": "bambino",
+    "ru": "ребёнок",
+    "pt": "criança",
+    "nl": "kind",
+    "pl": "dziecko"
+  }
+}

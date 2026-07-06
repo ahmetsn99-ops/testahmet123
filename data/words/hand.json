@@ -1,0 +1,42 @@
+{
+  "slug": "hand",
+  "wort": "Hand",
+  "artikel": "die",
+  "plural": "Hände",
+  "genitiv_singular": "Hand",
+  "kategorie": "vucut",
+  "haeufigkeit_rang": 68,
+  "saetze": [
+    "Die Hand tut weh.",
+    "Ich wasche die Hand.",
+    "Ich berühre die Hand vorsichtig.",
+    "Die Form der Hand ist rund.",
+    "Die Hände sind wichtig.",
+    "Wir schützen die Hände.",
+    "Das ist eine starker Hand.",
+    "Ich habe eine Hand.",
+    "Die Hand bewegt sich.",
+    "Neben der Hand ist eine Narbe."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Hand\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "el",
+    "en": "hand",
+    "ar": "يد",
+    "es": "mano",
+    "fr": "main",
+    "it": "mano",
+    "ru": "рука",
+    "pt": "mão",
+    "nl": "hand",
+    "pl": "ręka"
+  }
+}

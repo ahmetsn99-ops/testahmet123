@@ -1,0 +1,42 @@
+{
+  "slug": "kaffee",
+  "wort": "Kaffee",
+  "artikel": "der",
+  "plural": "Kaffees",
+  "genitiv_singular": "Kaffees",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 142,
+  "saetze": [
+    "Der Kaffee schmeckt gut.",
+    "Ich mag den Kaffee.",
+    "Ich koche mit dem Kaffee.",
+    "Der Geschmack des Kaffees ist stark.",
+    "Die Kaffees stehen im Regal.",
+    "Wir kaufen die Kaffees.",
+    "Das ist ein frischer Kaffee.",
+    "Ich nehme einen neuen Kaffee.",
+    "Der Kaffee ist gesund.",
+    "Ohne den Kaffee schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Kaffee\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kahve",
+    "en": "coffee",
+    "ar": "قهوة",
+    "es": "café",
+    "fr": "café",
+    "it": "caffè",
+    "ru": "кофе",
+    "pt": "café",
+    "nl": "koffie",
+    "pl": "kawa"
+  }
+}

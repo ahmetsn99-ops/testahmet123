@@ -1,0 +1,42 @@
+{
+  "slug": "hund",
+  "wort": "Hund",
+  "artikel": "der",
+  "plural": "Hunde",
+  "genitiv_singular": "Hunds",
+  "kategorie": "hayvan",
+  "haeufigkeit_rang": 133,
+  "saetze": [
+    "Der Hund schläft auf dem Sofa.",
+    "Ich füttere den Hund.",
+    "Ich spiele mit dem Hund.",
+    "Der Schwanz des Hunds ist lang.",
+    "Die Hunde leben im Wald.",
+    "Wir beobachten die Hunde.",
+    "Das ist ein kleiner Hund.",
+    "Wir haben einen neuen Hund.",
+    "Der Hund läuft schnell.",
+    "Neben dem Hund sitzt ein Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Hund\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "köpek",
+    "en": "dog",
+    "ar": "كلب",
+    "es": "perro",
+    "fr": "chien",
+    "it": "cane",
+    "ru": "собака",
+    "pt": "cachorro",
+    "nl": "hond",
+    "pl": "pies"
+  }
+}

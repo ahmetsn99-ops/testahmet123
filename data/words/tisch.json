@@ -1,0 +1,42 @@
+{
+  "slug": "tisch",
+  "wort": "Tisch",
+  "artikel": "der",
+  "plural": "Tische",
+  "genitiv_singular": "Tisches",
+  "kategorie": "mobilya",
+  "haeufigkeit_rang": 208,
+  "saetze": [
+    "Der Tisch steht im Zimmer.",
+    "Ich sehe den Tisch.",
+    "Ich sitze an dem Tisch.",
+    "Die Farbe des Tisches ist braun.",
+    "Die Tische stehen im Raum.",
+    "Wir kaufen die Tische.",
+    "Das ist ein schöner Tisch.",
+    "Ich brauche einen neuen Tisch.",
+    "Der Tisch ist aus Holz.",
+    "Neben dem Tisch liegt ein Teppich."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Tisch\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "masa",
+    "en": "table",
+    "ar": "طاولة",
+    "es": "mesa",
+    "fr": "table",
+    "it": "tavolo",
+    "ru": "стол",
+    "pt": "mesa",
+    "nl": "tafel",
+    "pl": "stół"
+  }
+}

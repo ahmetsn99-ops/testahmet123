@@ -1,0 +1,42 @@
+{
+  "slug": "loffel",
+  "wort": "Löffel",
+  "artikel": "der",
+  "plural": "Löffel",
+  "genitiv_singular": "Löffels",
+  "kategorie": "esya",
+  "haeufigkeit_rang": 1975,
+  "saetze": [
+    "Der Löffel liegt auf dem Tisch.",
+    "Ich benutze den Löffel.",
+    "Ich schneide mit dem Löffel.",
+    "Der Preis des Löffels ist hoch.",
+    "Die Löffel sind im Schrank.",
+    "Wir brauchen die Löffel.",
+    "Das ist ein nützlicher Löffel.",
+    "Ich kaufe einen neuen Löffel.",
+    "Der Löffel ist sehr praktisch.",
+    "Neben dem Löffel liegt eine Serviette."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Löffel\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kaşık",
+    "en": "spoon",
+    "ar": "ملعقة",
+    "es": "cuchara",
+    "fr": "cuillère",
+    "it": "cucchiaio",
+    "ru": "ложка",
+    "pt": "colher",
+    "nl": "lepel",
+    "pl": "łyżka"
+  }
+}

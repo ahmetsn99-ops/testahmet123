@@ -1,0 +1,42 @@
+{
+  "slug": "maus",
+  "wort": "Maus",
+  "artikel": "die",
+  "plural": "Mäuse",
+  "genitiv_singular": "Maus",
+  "kategorie": "hayvan",
+  "haeufigkeit_rang": 1426,
+  "saetze": [
+    "Die Maus schläft auf dem Sofa.",
+    "Ich füttere die Maus.",
+    "Ich spiele mit der Maus.",
+    "Der Schwanz der Maus ist lang.",
+    "Die Mäuse leben im Wald.",
+    "Wir beobachten die Mäuse.",
+    "Das ist eine kleiner Maus.",
+    "Wir haben eine neuen Maus.",
+    "Die Maus läuft schnell.",
+    "Neben der Maus sitzt ein Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Maus\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "fare",
+    "en": "mouse",
+    "ar": "فأر",
+    "es": "ratón",
+    "fr": "souris",
+    "it": "topo",
+    "ru": "мышь",
+    "pt": "rato",
+    "nl": "muis",
+    "pl": "mysz"
+  }
+}

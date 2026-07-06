@@ -1,0 +1,42 @@
+{
+  "slug": "stadt",
+  "wort": "Stadt",
+  "artikel": "die",
+  "plural": "Städte",
+  "genitiv_singular": "Stadt",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 44,
+  "saetze": [
+    "Die Stadt ist sehr groß.",
+    "Wir besuchen die Stadt.",
+    "Ich wohne in der Stadt.",
+    "Die Geschichte der Stadt ist interessant.",
+    "Die Städte sind in Europa bekannt.",
+    "Viele Menschen mögen die Städte.",
+    "Das ist eine schöner Stadt.",
+    "Ich besuche eine neuen Stadt.",
+    "Die Stadt liegt am Fluss.",
+    "In der Stadt gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Stadt\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "şehir",
+    "en": "city",
+    "ar": "مدينة",
+    "es": "ciudad",
+    "fr": "ville",
+    "it": "città",
+    "ru": "город",
+    "pt": "cidade",
+    "nl": "stad",
+    "pl": "miasto"
+  }
+}

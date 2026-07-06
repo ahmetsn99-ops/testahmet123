@@ -1,0 +1,42 @@
+{
+  "slug": "kopf",
+  "wort": "Kopf",
+  "artikel": "der",
+  "plural": "Köpfe",
+  "genitiv_singular": "Kopfs",
+  "kategorie": "vucut",
+  "haeufigkeit_rang": 48,
+  "saetze": [
+    "Der Kopf tut weh.",
+    "Ich wasche den Kopf.",
+    "Ich berühre den Kopf vorsichtig.",
+    "Die Form des Kopfs ist rund.",
+    "Die Köpfe sind wichtig.",
+    "Wir schützen die Köpfe.",
+    "Das ist ein starker Kopf.",
+    "Ich habe einen Kopf.",
+    "Der Kopf bewegt sich.",
+    "Neben dem Kopf ist eine Narbe."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Kopf\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kafa",
+    "en": "head",
+    "ar": "رأس",
+    "es": "cabeza",
+    "fr": "tête",
+    "it": "testa",
+    "ru": "голова",
+    "pt": "cabeça",
+    "nl": "hoofd",
+    "pl": "głowa"
+  }
+}

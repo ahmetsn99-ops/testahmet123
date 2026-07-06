@@ -1,0 +1,42 @@
+{
+  "slug": "auge",
+  "wort": "Auge",
+  "artikel": "das",
+  "plural": "Augen",
+  "genitiv_singular": "Auges",
+  "kategorie": "vucut",
+  "haeufigkeit_rang": 217,
+  "saetze": [
+    "Das Auge tut weh.",
+    "Ich wasche das Auge.",
+    "Ich berühre das Auge vorsichtig.",
+    "Die Form des Auges ist rund.",
+    "Die Augen sind wichtig.",
+    "Wir schützen die Augen.",
+    "Das ist ein starker Auge.",
+    "Ich habe ein Auge.",
+    "Das Auge bewegt sich.",
+    "Neben dem Auge ist eine Narbe."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Auge\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "göz",
+    "en": "eye",
+    "ar": "عين",
+    "es": "ojo",
+    "fr": "œil",
+    "it": "occhio",
+    "ru": "глаз",
+    "pt": "olho",
+    "nl": "oog",
+    "pl": "oko"
+  }
+}

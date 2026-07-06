@@ -1,0 +1,42 @@
+{
+  "slug": "freund",
+  "wort": "Freund",
+  "artikel": "der",
+  "plural": "Freunde",
+  "genitiv_singular": "Freunds",
+  "kategorie": "insan",
+  "haeufigkeit_rang": 19,
+  "saetze": [
+    "Der Freund arbeitet jeden Tag.",
+    "Ich kenne den Freund.",
+    "Ich spreche mit dem Freund.",
+    "Der Name des Freunds ist bekannt.",
+    "Die Freunde treffen sich oft.",
+    "Wir helfen den Freunde.",
+    "Das ist ein freundlicher Freund.",
+    "Ich habe einen guten Freund.",
+    "Der Freund wohnt in der Stadt.",
+    "Ich vertraue dem Freund."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Freund\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "arkadaş",
+    "en": "friend",
+    "ar": "صديق",
+    "es": "amigo",
+    "fr": "ami",
+    "it": "amico",
+    "ru": "друг",
+    "pt": "amigo",
+    "nl": "vriend",
+    "pl": "przyjaciel"
+  }
+}

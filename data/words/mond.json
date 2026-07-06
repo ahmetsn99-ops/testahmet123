@@ -1,0 +1,42 @@
+{
+  "slug": "mond",
+  "wort": "Mond",
+  "artikel": "der",
+  "plural": "Monde",
+  "genitiv_singular": "Mondes",
+  "kategorie": "doga",
+  "haeufigkeit_rang": 601,
+  "saetze": [
+    "Der Mond ist heute schön.",
+    "Ich sehe den Mond.",
+    "Ich freue mich über den Mond.",
+    "Die Farbe des Mondes ist leuchtend.",
+    "Die Monde stehen im Garten.",
+    "Wir beobachten die Monde.",
+    "Das ist ein schöner Mond.",
+    "Ich male einen Mond.",
+    "Der Mond ist wunderschön.",
+    "Neben dem Mond steht eine Bank."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Mond\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "ay",
+    "en": "moon",
+    "ar": "قمر",
+    "es": "luna",
+    "fr": "lune",
+    "it": "luna",
+    "ru": "луна",
+    "pt": "lua",
+    "nl": "maan",
+    "pl": "księżyc"
+  }
+}

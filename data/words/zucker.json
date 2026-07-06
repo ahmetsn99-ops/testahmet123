@@ -1,0 +1,42 @@
+{
+  "slug": "zucker",
+  "wort": "Zucker",
+  "artikel": "der",
+  "plural": "Zucker",
+  "genitiv_singular": "Zuckers",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 929,
+  "saetze": [
+    "Der Zucker schmeckt gut.",
+    "Ich mag den Zucker.",
+    "Ich koche mit dem Zucker.",
+    "Der Geschmack des Zuckers ist stark.",
+    "Die Zucker stehen im Regal.",
+    "Wir kaufen die Zucker.",
+    "Das ist ein frischer Zucker.",
+    "Ich nehme einen neuen Zucker.",
+    "Der Zucker ist gesund.",
+    "Ohne den Zucker schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Zucker\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "şeker",
+    "en": "sugar",
+    "ar": "سكر",
+    "es": "azúcar",
+    "fr": "sucre",
+    "it": "zucchero",
+    "ru": "сахар",
+    "pt": "açúcar",
+    "nl": "suiker",
+    "pl": "cukier"
+  }
+}

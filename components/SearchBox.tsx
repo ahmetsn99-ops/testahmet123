@@ -1,79 +1,80 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState, useMemo, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { Wort } from "@/data/woerter";
+import { WordIndexEntry } from "@/lib/words";
+import wordsIndex from "@/data/index/all-words.json";
 
-export default function SearchBox({ woerter }: { woerter: Wort[] }) {
+export function SearchBox({ compact = false }: { compact?: boolean }) {
   const [query, setQuery] = useState("");
+  const [open, setOpen] = useState(false);
   const router = useRouter();
+  const containerRef = useRef<HTMLDivElement>(null);
 
-  const treffer = useMemo(() => {
-    if (!query.trim()) return [];
+  const results = useMemo(() => {
+    if (query.trim().length < 1) return [];
     const q = query.trim().toLowerCase();
-    return woerter.filter((w) => w.wort.toLowerCase().includes(q)).slice(0, 6);
-  }, [query, woerter]);
+    return (wordsIndex as WordIndexEntry[])
+      .filter((w) => w.wort.toLowerCase().includes(q))
+      .slice(0, 8);
+  }, [query]);
+
+  useEffect(() => {
+    function onClickOutside(e: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", onClickOutside);
+    return () => document.removeEventListener("mousedown", onClickOutside);
+  }, []);
+
+  function goTo(slug: string) {
+    setOpen(false);
+    setQuery("");
+    router.push(`/artikel/${slug}`);
+  }
 
   return (
-    <div style={{ position: "relative", maxWidth: 540 }}>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault();
-          if (treffer[0]) router.push(`/${treffer[0].artikel}/${treffer[0].slug}`);
+    <div ref={containerRef} className="relative w-full">
+      <input
+        type="text"
+        value={query}
+        onChange={(e) => {
+          setQuery(e.target.value);
+          setOpen(true);
         }}
-        className="card"
-        style={{ display: "flex", padding: 5, borderRadius: 10 }}
-      >
-        <input
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="z. B. Tisch, Katze, Haus …"
-          aria-label="Substantiv suchen"
-          style={{
-            flex: 1,
-            border: "none",
-            background: "transparent",
-            padding: "13px 16px",
-            fontSize: 16,
-            outline: "none",
-            color: "var(--ink)",
-          }}
-        />
-        <button type="submit" className="btn btn-primary">
-          Suchen
-        </button>
-      </form>
-
-      {treffer.length > 0 && (
+        onFocus={() => setOpen(true)}
+        placeholder="Wort eingeben, z. B. Tisch …"
+        aria-label="Deutsches Substantiv suchen"
+        className={`w-full rounded-full border bg-white outline-none transition-shadow focus:shadow-md ${
+          compact ? "px-4 py-2 text-sm" : "px-6 py-4 text-base md:text-lg"
+        }`}
+        style={{ borderColor: "var(--border)", color: "var(--ink)" }}
+      />
+      {open && results.length > 0 && (
         <ul
-          className="card"
-          style={{
-            listStyle: "none",
-            margin: "8px 0 0",
-            padding: 6,
-            position: "absolute",
-            top: "100%",
-            left: 0,
-            right: 0,
-            zIndex: 10,
-            boxShadow: "var(--shadow)",
-          }}
+          className="absolute z-20 mt-2 w-full rounded-2xl border bg-white shadow-lg overflow-hidden"
+          style={{ borderColor: "var(--border)" }}
         >
-          {treffer.map((w) => (
-            <li key={w.slug}>
-              <a
-                href={`/${w.artikel}/${w.slug}`}
-                style={{
-                  display: "block",
-                  padding: "10px 12px",
-                  textDecoration: "none",
-                  color: "var(--ink)",
-                  fontSize: 15,
-                  borderRadius: "var(--radius-sm)",
-                }}
+          {results.map((r) => (
+            <li key={r.slug}>
+              <button
+                onClick={() => goTo(r.slug)}
+                className="w-full text-left px-4 py-2.5 hover:bg-[var(--bg)] flex items-center gap-2 text-sm"
               >
-                {w.wort}
-              </a>
+                <span
+                  className="font-mono text-xs px-2 py-0.5 rounded-full"
+                  style={{
+                    background:
+                      r.artikel === "der" ? "var(--der-bg)" : r.artikel === "die" ? "var(--die-bg)" : "var(--das-bg)",
+                    color: r.artikel === "der" ? "var(--der)" : r.artikel === "die" ? "var(--die)" : "var(--das)",
+                  }}
+                >
+                  {r.artikel}
+                </span>
+                <span>{r.wort}</span>
+              </button>
             </li>
           ))}
         </ul>

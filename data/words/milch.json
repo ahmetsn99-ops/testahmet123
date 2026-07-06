@@ -1,0 +1,42 @@
+{
+  "slug": "milch",
+  "wort": "Milch",
+  "artikel": "die",
+  "plural": "-",
+  "genitiv_singular": "Milch",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 595,
+  "saetze": [
+    "Die Milch schmeckt gut.",
+    "Ich mag die Milch.",
+    "Ich koche mit der Milch.",
+    "Der Geschmack der Milch ist stark.",
+    "Die Milch stehen im Regal.",
+    "Wir kaufen die Milch.",
+    "Das ist eine frischer Milch.",
+    "Ich nehme eine neuen Milch.",
+    "Die Milch ist gesund.",
+    "Ohne die Milch schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Milch\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "süt",
+    "en": "milk",
+    "ar": "حليب",
+    "es": "leche",
+    "fr": "lait",
+    "it": "latte",
+    "ru": "молоко",
+    "pt": "leite",
+    "nl": "melk",
+    "pl": "mleko"
+  }
+}

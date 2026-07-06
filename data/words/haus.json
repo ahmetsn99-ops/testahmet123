@@ -1,0 +1,42 @@
+{
+  "slug": "haus",
+  "wort": "Haus",
+  "artikel": "das",
+  "plural": "Häuser",
+  "genitiv_singular": "Hauses",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 17,
+  "saetze": [
+    "Das Haus ist sehr groß.",
+    "Wir besuchen das Haus.",
+    "Ich wohne in dem Haus.",
+    "Die Geschichte des Hauses ist interessant.",
+    "Die Häuser sind in Europa bekannt.",
+    "Viele Menschen mögen die Häuser.",
+    "Das ist ein schöner Haus.",
+    "Ich besuche ein neuen Haus.",
+    "Das Haus liegt am Fluss.",
+    "In dem Haus gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Haus\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "ev",
+    "en": "house",
+    "ar": "منزل",
+    "es": "casa",
+    "fr": "maison",
+    "it": "casa",
+    "ru": "дом",
+    "pt": "casa",
+    "nl": "huis",
+    "pl": "dom"
+  }
+}

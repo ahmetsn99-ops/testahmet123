@@ -1,0 +1,42 @@
+{
+  "slug": "auto",
+  "wort": "Auto",
+  "artikel": "das",
+  "plural": "Autos",
+  "genitiv_singular": "Autos",
+  "kategorie": "esya",
+  "haeufigkeit_rang": 56,
+  "saetze": [
+    "Das Auto liegt auf dem Tisch.",
+    "Ich benutze das Auto.",
+    "Ich schneide mit dem Auto.",
+    "Der Preis des Autos ist hoch.",
+    "Die Autos sind im Schrank.",
+    "Wir brauchen die Autos.",
+    "Das ist ein nützlicher Auto.",
+    "Ich kaufe ein neuen Auto.",
+    "Das Auto ist sehr praktisch.",
+    "Neben dem Auto liegt eine Serviette."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Auto\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "araba",
+    "en": "car",
+    "ar": "سيارة",
+    "es": "coche",
+    "fr": "voiture",
+    "it": "auto",
+    "ru": "машина",
+    "pt": "carro",
+    "nl": "auto",
+    "pl": "samochód"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "pferd",
+  "wort": "Pferd",
+  "artikel": "das",
+  "plural": "Pferde",
+  "genitiv_singular": "Pferds",
+  "kategorie": "hayvan",
+  "haeufigkeit_rang": 292,
+  "saetze": [
+    "Das Pferd schläft auf dem Sofa.",
+    "Ich füttere das Pferd.",
+    "Ich spiele mit dem Pferd.",
+    "Der Schwanz des Pferds ist lang.",
+    "Die Pferde leben im Wald.",
+    "Wir beobachten die Pferde.",
+    "Das ist ein kleiner Pferd.",
+    "Wir haben ein neuen Pferd.",
+    "Das Pferd läuft schnell.",
+    "Neben dem Pferd sitzt ein Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Pferd\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "at",
+    "en": "horse",
+    "ar": "حصان",
+    "es": "caballo",
+    "fr": "cheval",
+    "it": "cavallo",
+    "ru": "лошадь",
+    "pt": "cavalo",
+    "nl": "paard",
+    "pl": "koń"
+  }
+}

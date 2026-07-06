@@ -1,0 +1,42 @@
+{
+  "slug": "sonne",
+  "wort": "Sonne",
+  "artikel": "die",
+  "plural": "Sonnen",
+  "genitiv_singular": "Sonne",
+  "kategorie": "doga",
+  "haeufigkeit_rang": 314,
+  "saetze": [
+    "Die Sonne ist heute schön.",
+    "Ich sehe die Sonne.",
+    "Ich freue mich über die Sonne.",
+    "Die Farbe der Sonne ist leuchtend.",
+    "Die Sonnen stehen im Garten.",
+    "Wir beobachten die Sonnen.",
+    "Das ist eine schöner Sonne.",
+    "Ich male eine Sonne.",
+    "Die Sonne ist wunderschön.",
+    "Neben der Sonne steht eine Bank."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Sonne\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "güneş",
+    "en": "sun",
+    "ar": "شمس",
+    "es": "sol",
+    "fr": "soleil",
+    "it": "sole",
+    "ru": "солнце",
+    "pt": "sol",
+    "nl": "zon",
+    "pl": "słońce"
+  }
+}

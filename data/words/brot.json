@@ -1,0 +1,42 @@
+{
+  "slug": "brot",
+  "wort": "Brot",
+  "artikel": "das",
+  "plural": "Brote",
+  "genitiv_singular": "Brots",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 757,
+  "saetze": [
+    "Das Brot schmeckt gut.",
+    "Ich mag das Brot.",
+    "Ich koche mit dem Brot.",
+    "Der Geschmack des Brots ist stark.",
+    "Die Brote stehen im Regal.",
+    "Wir kaufen die Brote.",
+    "Das ist ein frischer Brot.",
+    "Ich nehme ein neuen Brot.",
+    "Das Brot ist gesund.",
+    "Ohne das Brot schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Brot\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "ekmek",
+    "en": "bread",
+    "ar": "خبز",
+    "es": "pan",
+    "fr": "pain",
+    "it": "pane",
+    "ru": "хлеб",
+    "pt": "pão",
+    "nl": "brood",
+    "pl": "chleb"
+  }
+}

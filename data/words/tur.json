@@ -1,0 +1,42 @@
+{
+  "slug": "tur",
+  "wort": "Tür",
+  "artikel": "die",
+  "plural": "Türen",
+  "genitiv_singular": "Tür",
+  "kategorie": "mobilya",
+  "haeufigkeit_rang": 55,
+  "saetze": [
+    "Die Tür steht im Zimmer.",
+    "Ich sehe die Tür.",
+    "Ich sitze an der Tür.",
+    "Die Farbe der Tür ist braun.",
+    "Die Türen stehen im Raum.",
+    "Wir kaufen die Türen.",
+    "Das ist eine schöner Tür.",
+    "Ich brauche eine neuen Tür.",
+    "Die Tür ist aus Holz.",
+    "Neben der Tür liegt ein Teppich."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Tür\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kapı",
+    "en": "door",
+    "ar": "باب",
+    "es": "puerta",
+    "fr": "porte",
+    "it": "porta",
+    "ru": "дверь",
+    "pt": "porta",
+    "nl": "deur",
+    "pl": "drzwi"
+  }
+}

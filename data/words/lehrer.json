@@ -1,0 +1,42 @@
+{
+  "slug": "lehrer",
+  "wort": "Lehrer",
+  "artikel": "der",
+  "plural": "Lehrer",
+  "genitiv_singular": "Lehrers",
+  "kategorie": "insan",
+  "haeufigkeit_rang": 501,
+  "saetze": [
+    "Der Lehrer arbeitet jeden Tag.",
+    "Ich kenne den Lehrer.",
+    "Ich spreche mit dem Lehrer.",
+    "Der Name des Lehrers ist bekannt.",
+    "Die Lehrer treffen sich oft.",
+    "Wir helfen den Lehrer.",
+    "Das ist ein freundlicher Lehrer.",
+    "Ich habe einen guten Lehrer.",
+    "Der Lehrer wohnt in der Stadt.",
+    "Ich vertraue dem Lehrer."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Lehrer\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "öğretmen",
+    "en": "teacher",
+    "ar": "معلم",
+    "es": "profesor",
+    "fr": "professeur",
+    "it": "insegnante",
+    "ru": "учитель",
+    "pt": "professor",
+    "nl": "leraar",
+    "pl": "nauczyciel"
+  }
+}

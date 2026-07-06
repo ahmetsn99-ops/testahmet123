@@ -1,0 +1,42 @@
+{
+  "slug": "vogel",
+  "wort": "Vogel",
+  "artikel": "der",
+  "plural": "Vögel",
+  "genitiv_singular": "Vogels",
+  "kategorie": "hayvan",
+  "haeufigkeit_rang": 553,
+  "saetze": [
+    "Der Vogel schläft auf dem Sofa.",
+    "Ich füttere den Vogel.",
+    "Ich spiele mit dem Vogel.",
+    "Der Schwanz des Vogels ist lang.",
+    "Die Vögel leben im Wald.",
+    "Wir beobachten die Vögel.",
+    "Das ist ein kleiner Vogel.",
+    "Wir haben einen neuen Vogel.",
+    "Der Vogel läuft schnell.",
+    "Neben dem Vogel sitzt ein Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Vogel\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kuş",
+    "en": "bird",
+    "ar": "طائر",
+    "es": "pájaro",
+    "fr": "oiseau",
+    "it": "uccello",
+    "ru": "птица",
+    "pt": "pássaro",
+    "nl": "vogel",
+    "pl": "ptak"
+  }
+}

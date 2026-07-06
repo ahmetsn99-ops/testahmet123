@@ -1,0 +1,42 @@
+{
+  "slug": "blume",
+  "wort": "Blume",
+  "artikel": "die",
+  "plural": "Blumen",
+  "genitiv_singular": "Blume",
+  "kategorie": "doga",
+  "haeufigkeit_rang": 1485,
+  "saetze": [
+    "Die Blume ist heute schön.",
+    "Ich sehe die Blume.",
+    "Ich freue mich über die Blume.",
+    "Die Farbe der Blume ist leuchtend.",
+    "Die Blumen stehen im Garten.",
+    "Wir beobachten die Blumen.",
+    "Das ist eine schöner Blume.",
+    "Ich male eine Blume.",
+    "Die Blume ist wunderschön.",
+    "Neben der Blume steht eine Bank."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Blume\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "çiçek",
+    "en": "flower",
+    "ar": "زهرة",
+    "es": "flor",
+    "fr": "fleur",
+    "it": "fiore",
+    "ru": "цветок",
+    "pt": "flor",
+    "nl": "bloem",
+    "pl": "kwiat"
+  }
+}

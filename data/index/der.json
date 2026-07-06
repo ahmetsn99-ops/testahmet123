@@ -1,0 +1,110 @@
+[
+  {
+    "slug": "apfel",
+    "wort": "Apfel",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "arzt",
+    "wort": "Arzt",
+    "artikel": "der",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "baum",
+    "wort": "Baum",
+    "artikel": "der",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "fisch",
+    "wort": "Fisch",
+    "artikel": "der",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "freund",
+    "wort": "Freund",
+    "artikel": "der",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "garten",
+    "wort": "Garten",
+    "artikel": "der",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "hund",
+    "wort": "Hund",
+    "artikel": "der",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "kaffee",
+    "wort": "Kaffee",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "kopf",
+    "wort": "Kopf",
+    "artikel": "der",
+    "kategorie": "vucut"
+  },
+  {
+    "slug": "lehrer",
+    "wort": "Lehrer",
+    "artikel": "der",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "loffel",
+    "wort": "Löffel",
+    "artikel": "der",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "mond",
+    "wort": "Mond",
+    "artikel": "der",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "stern",
+    "wort": "Stern",
+    "artikel": "der",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "stuhl",
+    "wort": "Stuhl",
+    "artikel": "der",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "tee",
+    "wort": "Tee",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "tisch",
+    "wort": "Tisch",
+    "artikel": "der",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "vogel",
+    "wort": "Vogel",
+    "artikel": "der",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "zucker",
+    "wort": "Zucker",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  }
+]

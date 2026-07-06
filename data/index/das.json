@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "auge",
+    "wort": "Auge",
+    "artikel": "das",
+    "kategorie": "vucut"
+  },
+  {
+    "slug": "auto",
+    "wort": "Auto",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "bett",
+    "wort": "Bett",
+    "artikel": "das",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "brot",
+    "wort": "Brot",
+    "artikel": "das",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "buch",
+    "wort": "Buch",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "fenster",
+    "wort": "Fenster",
+    "artikel": "das",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "glas",
+    "wort": "Glas",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "haus",
+    "wort": "Haus",
+    "artikel": "das",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "kind",
+    "wort": "Kind",
+    "artikel": "das",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "land",
+    "wort": "Land",
+    "artikel": "das",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "messer",
+    "wort": "Messer",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "pferd",
+    "wort": "Pferd",
+    "artikel": "das",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "salz",
+    "wort": "Salz",
+    "artikel": "das",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "wasser",
+    "wort": "Wasser",
+    "artikel": "das",
+    "kategorie": "yiyecek_icecek"
+  }
+]

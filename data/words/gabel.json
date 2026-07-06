@@ -1,0 +1,42 @@
+{
+  "slug": "gabel",
+  "wort": "Gabel",
+  "artikel": "die",
+  "plural": "Gabeln",
+  "genitiv_singular": "Gabel",
+  "kategorie": "esya",
+  "haeufigkeit_rang": 2996,
+  "saetze": [
+    "Die Gabel liegt auf dem Tisch.",
+    "Ich benutze die Gabel.",
+    "Ich schneide mit der Gabel.",
+    "Der Preis der Gabel ist hoch.",
+    "Die Gabeln sind im Schrank.",
+    "Wir brauchen die Gabeln.",
+    "Das ist eine nützlicher Gabel.",
+    "Ich kaufe eine neuen Gabel.",
+    "Die Gabel ist sehr praktisch.",
+    "Neben der Gabel liegt eine Serviette."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Gabel\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "çatal",
+    "en": "fork",
+    "ar": "شوكة",
+    "es": "tenedor",
+    "fr": "fourchette",
+    "it": "forchetta",
+    "ru": "вилка",
+    "pt": "garfo",
+    "nl": "vork",
+    "pl": "widelec"
+  }
+}

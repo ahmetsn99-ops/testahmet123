@@ -1,0 +1,42 @@
+{
+  "slug": "fisch",
+  "wort": "Fisch",
+  "artikel": "der",
+  "plural": "Fische",
+  "genitiv_singular": "Fisches",
+  "kategorie": "hayvan",
+  "haeufigkeit_rang": 540,
+  "saetze": [
+    "Der Fisch schläft auf dem Sofa.",
+    "Ich füttere den Fisch.",
+    "Ich spiele mit dem Fisch.",
+    "Der Schwanz des Fisches ist lang.",
+    "Die Fische leben im Wald.",
+    "Wir beobachten die Fische.",
+    "Das ist ein kleiner Fisch.",
+    "Wir haben einen neuen Fisch.",
+    "Der Fisch läuft schnell.",
+    "Neben dem Fisch sitzt ein Kind."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Fisch\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "balık",
+    "en": "fish",
+    "ar": "سمكة",
+    "es": "pez",
+    "fr": "poisson",
+    "it": "pesce",
+    "ru": "рыба",
+    "pt": "peixe",
+    "nl": "vis",
+    "pl": "ryba"
+  }
+}

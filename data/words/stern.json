@@ -1,0 +1,42 @@
+{
+  "slug": "stern",
+  "wort": "Stern",
+  "artikel": "der",
+  "plural": "Sterne",
+  "genitiv_singular": "Sterns",
+  "kategorie": "doga",
+  "haeufigkeit_rang": 979,
+  "saetze": [
+    "Der Stern ist heute schön.",
+    "Ich sehe den Stern.",
+    "Ich freue mich über den Stern.",
+    "Die Farbe des Sterns ist leuchtend.",
+    "Die Sterne stehen im Garten.",
+    "Wir beobachten die Sterne.",
+    "Das ist ein schöner Stern.",
+    "Ich male einen Stern.",
+    "Der Stern ist wunderschön.",
+    "Neben dem Stern steht eine Bank."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Stern\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "yıldız",
+    "en": "star",
+    "ar": "نجمة",
+    "es": "estrella",
+    "fr": "étoile",
+    "it": "stella",
+    "ru": "звезда",
+    "pt": "estrela",
+    "nl": "ster",
+    "pl": "gwiazda"
+  }
+}

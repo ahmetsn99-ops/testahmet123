@@ -1,0 +1,42 @@
+{
+  "slug": "baum",
+  "wort": "Baum",
+  "artikel": "der",
+  "plural": "Bäume",
+  "genitiv_singular": "Baums",
+  "kategorie": "doga",
+  "haeufigkeit_rang": 500,
+  "saetze": [
+    "Der Baum ist heute schön.",
+    "Ich sehe den Baum.",
+    "Ich freue mich über den Baum.",
+    "Die Farbe des Baums ist leuchtend.",
+    "Die Bäume stehen im Garten.",
+    "Wir beobachten die Bäume.",
+    "Das ist ein schöner Baum.",
+    "Ich male einen Baum.",
+    "Der Baum ist wunderschön.",
+    "Neben dem Baum steht eine Bank."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Baum\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "ağaç",
+    "en": "tree",
+    "ar": "شجرة",
+    "es": "árbol",
+    "fr": "arbre",
+    "it": "albero",
+    "ru": "дерево",
+    "pt": "árvore",
+    "nl": "boom",
+    "pl": "drzewo"
+  }
+}

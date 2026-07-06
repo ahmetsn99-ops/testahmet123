@@ -1,0 +1,42 @@
+{
+  "slug": "frau",
+  "wort": "Frau",
+  "artikel": "die",
+  "plural": "Frauen",
+  "genitiv_singular": "Frau",
+  "kategorie": "insan",
+  "haeufigkeit_rang": 3,
+  "saetze": [
+    "Die Frau arbeitet jeden Tag.",
+    "Ich kenne die Frau.",
+    "Ich spreche mit der Frau.",
+    "Der Name der Frau ist bekannt.",
+    "Die Frauen treffen sich oft.",
+    "Wir helfen den Frauen.",
+    "Das ist eine freundlicher Frau.",
+    "Ich habe eine guten Frau.",
+    "Die Frau wohnt in der Stadt.",
+    "Ich vertraue der Frau."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Frau\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kadın",
+    "en": "woman",
+    "ar": "امرأة",
+    "es": "mujer",
+    "fr": "femme",
+    "it": "donna",
+    "ru": "женщина",
+    "pt": "mulher",
+    "nl": "vrouw",
+    "pl": "kobieta"
+  }
+}

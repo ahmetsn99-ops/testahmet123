@@ -1,0 +1,42 @@
+{
+  "slug": "salz",
+  "wort": "Salz",
+  "artikel": "das",
+  "plural": "Salze",
+  "genitiv_singular": "Salzes",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 1410,
+  "saetze": [
+    "Das Salz schmeckt gut.",
+    "Ich mag das Salz.",
+    "Ich koche mit dem Salz.",
+    "Der Geschmack des Salzes ist stark.",
+    "Die Salze stehen im Regal.",
+    "Wir kaufen die Salze.",
+    "Das ist ein frischer Salz.",
+    "Ich nehme ein neuen Salz.",
+    "Das Salz ist gesund.",
+    "Ohne das Salz schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Salz\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "tuz",
+    "en": "salt",
+    "ar": "ملح",
+    "es": "sal",
+    "fr": "sel",
+    "it": "sale",
+    "ru": "соль",
+    "pt": "sal",
+    "nl": "zout",
+    "pl": "sól"
+  }
+}

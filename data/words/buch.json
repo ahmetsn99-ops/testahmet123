@@ -1,0 +1,42 @@
+{
+  "slug": "buch",
+  "wort": "Buch",
+  "artikel": "das",
+  "plural": "Bücher",
+  "genitiv_singular": "Buchs",
+  "kategorie": "esya",
+  "haeufigkeit_rang": 145,
+  "saetze": [
+    "Das Buch liegt auf dem Tisch.",
+    "Ich benutze das Buch.",
+    "Ich schneide mit dem Buch.",
+    "Der Preis des Buchs ist hoch.",
+    "Die Bücher sind im Schrank.",
+    "Wir brauchen die Bücher.",
+    "Das ist ein nützlicher Buch.",
+    "Ich kaufe ein neuen Buch.",
+    "Das Buch ist sehr praktisch.",
+    "Neben dem Buch liegt eine Serviette."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Buch\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kitap",
+    "en": "book",
+    "ar": "كتاب",
+    "es": "libro",
+    "fr": "livre",
+    "it": "libro",
+    "ru": "книга",
+    "pt": "livro",
+    "nl": "boek",
+    "pl": "książka"
+  }
+}

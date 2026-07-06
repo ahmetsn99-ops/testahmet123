@@ -1,0 +1,42 @@
+{
+  "slug": "bett",
+  "wort": "Bett",
+  "artikel": "das",
+  "plural": "Betten",
+  "genitiv_singular": "Betts",
+  "kategorie": "mobilya",
+  "haeufigkeit_rang": 97,
+  "saetze": [
+    "Das Bett steht im Zimmer.",
+    "Ich sehe das Bett.",
+    "Ich sitze an dem Bett.",
+    "Die Farbe des Betts ist braun.",
+    "Die Betten stehen im Raum.",
+    "Wir kaufen die Betten.",
+    "Das ist ein schöner Bett.",
+    "Ich brauche ein neuen Bett.",
+    "Das Bett ist aus Holz.",
+    "Neben dem Bett liegt ein Teppich."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Bett\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "yatak",
+    "en": "bed",
+    "ar": "سرير",
+    "es": "cama",
+    "fr": "lit",
+    "it": "letto",
+    "ru": "кровать",
+    "pt": "cama",
+    "nl": "bed",
+    "pl": "łóżko"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "wasser",
+  "wort": "Wasser",
+  "artikel": "das",
+  "plural": "-",
+  "genitiv_singular": "Wassers",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 77,
+  "saetze": [
+    "Das Wasser schmeckt gut.",
+    "Ich mag das Wasser.",
+    "Ich koche mit dem Wasser.",
+    "Der Geschmack des Wassers ist stark.",
+    "Die Wasser stehen im Regal.",
+    "Wir kaufen die Wasser.",
+    "Das ist ein frischer Wasser.",
+    "Ich nehme ein neuen Wasser.",
+    "Das Wasser ist gesund.",
+    "Ohne das Wasser schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Wasser\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "su",
+    "en": "water",
+    "ar": "ماء",
+    "es": "agua",
+    "fr": "eau",
+    "it": "acqua",
+    "ru": "вода",
+    "pt": "água",
+    "nl": "water",
+    "pl": "woda"
+  }
+}

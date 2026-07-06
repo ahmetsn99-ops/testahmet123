@@ -1,0 +1,42 @@
+{
+  "slug": "freundin",
+  "wort": "Freundin",
+  "artikel": "die",
+  "plural": "Freundinnen",
+  "genitiv_singular": "Freundin",
+  "kategorie": "insan",
+  "haeufigkeit_rang": 94,
+  "saetze": [
+    "Die Freundin arbeitet jeden Tag.",
+    "Ich kenne die Freundin.",
+    "Ich spreche mit der Freundin.",
+    "Der Name der Freundin ist bekannt.",
+    "Die Freundinnen treffen sich oft.",
+    "Wir helfen den Freundinnen.",
+    "Das ist eine freundlicher Freundin.",
+    "Ich habe eine guten Freundin.",
+    "Die Freundin wohnt in der Stadt.",
+    "Ich vertraue der Freundin."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Freundin\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "kız arkadaş",
+    "en": "girlfriend",
+    "ar": "صديقة",
+    "es": "amiga",
+    "fr": "amie",
+    "it": "amica",
+    "ru": "подруга",
+    "pt": "amiga",
+    "nl": "vriendin",
+    "pl": "przyjaciółka"
+  }
+}

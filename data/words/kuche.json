@@ -1,0 +1,42 @@
+{
+  "slug": "kuche",
+  "wort": "Küche",
+  "artikel": "die",
+  "plural": "Küchen",
+  "genitiv_singular": "Küche",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 360,
+  "saetze": [
+    "Die Küche ist sehr groß.",
+    "Wir besuchen die Küche.",
+    "Ich wohne in der Küche.",
+    "Die Geschichte der Küche ist interessant.",
+    "Die Küchen sind in Europa bekannt.",
+    "Viele Menschen mögen die Küchen.",
+    "Das ist eine schöner Küche.",
+    "Ich besuche eine neuen Küche.",
+    "Die Küche liegt am Fluss.",
+    "In der Küche gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Küche\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "mutfak",
+    "en": "kitchen",
+    "ar": "مطبخ",
+    "es": "cocina",
+    "fr": "cuisine",
+    "it": "cucina",
+    "ru": "кухня",
+    "pt": "cozinha",
+    "nl": "keuken",
+    "pl": "kuchnia"
+  }
+}

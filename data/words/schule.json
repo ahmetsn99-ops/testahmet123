@@ -1,0 +1,42 @@
+{
+  "slug": "schule",
+  "wort": "Schule",
+  "artikel": "die",
+  "plural": "Schulen",
+  "genitiv_singular": "Schule",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 98,
+  "saetze": [
+    "Die Schule ist sehr groß.",
+    "Wir besuchen die Schule.",
+    "Ich wohne in der Schule.",
+    "Die Geschichte der Schule ist interessant.",
+    "Die Schulen sind in Europa bekannt.",
+    "Viele Menschen mögen die Schulen.",
+    "Das ist eine schöner Schule.",
+    "Ich besuche eine neuen Schule.",
+    "Die Schule liegt am Fluss.",
+    "In der Schule gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Schule\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "okul",
+    "en": "school",
+    "ar": "مدرسة",
+    "es": "escuela",
+    "fr": "école",
+    "it": "scuola",
+    "ru": "школа",
+    "pt": "escola",
+    "nl": "school",
+    "pl": "szkoła"
+  }
+}

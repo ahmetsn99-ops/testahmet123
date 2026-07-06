@@ -1,0 +1,42 @@
+{
+  "slug": "glas",
+  "wort": "Glas",
+  "artikel": "das",
+  "plural": "Gläser",
+  "genitiv_singular": "Glases",
+  "kategorie": "esya",
+  "haeufigkeit_rang": 376,
+  "saetze": [
+    "Das Glas liegt auf dem Tisch.",
+    "Ich benutze das Glas.",
+    "Ich schneide mit dem Glas.",
+    "Der Preis des Glases ist hoch.",
+    "Die Gläser sind im Schrank.",
+    "Wir brauchen die Gläser.",
+    "Das ist ein nützlicher Glas.",
+    "Ich kaufe ein neuen Glas.",
+    "Das Glas ist sehr praktisch.",
+    "Neben dem Glas liegt eine Serviette."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Glas\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "bardak",
+    "en": "glass",
+    "ar": "كوب",
+    "es": "vaso",
+    "fr": "verre",
+    "it": "bicchiere",
+    "ru": "стакан",
+    "pt": "copo",
+    "nl": "glas",
+    "pl": "szklanka"
+  }
+}

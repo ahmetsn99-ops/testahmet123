@@ -1,0 +1,42 @@
+{
+  "slug": "apfel",
+  "wort": "Apfel",
+  "artikel": "der",
+  "plural": "Äpfel",
+  "genitiv_singular": "Apfels",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 1675,
+  "saetze": [
+    "Der Apfel schmeckt gut.",
+    "Ich mag den Apfel.",
+    "Ich koche mit dem Apfel.",
+    "Der Geschmack des Apfels ist stark.",
+    "Die Äpfel stehen im Regal.",
+    "Wir kaufen die Äpfel.",
+    "Das ist ein frischer Apfel.",
+    "Ich nehme einen neuen Apfel.",
+    "Der Apfel ist gesund.",
+    "Ohne den Apfel schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Apfel\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "elma",
+    "en": "apple",
+    "ar": "تفاحة",
+    "es": "manzana",
+    "fr": "pomme",
+    "it": "mela",
+    "ru": "яблоко",
+    "pt": "maçã",
+    "nl": "appel",
+    "pl": "jabłko"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "strasse",
+  "wort": "Straße",
+  "artikel": "die",
+  "plural": "Straßen",
+  "genitiv_singular": "Straße",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 148,
+  "saetze": [
+    "Die Straße ist sehr groß.",
+    "Wir besuchen die Straße.",
+    "Ich wohne in der Straße.",
+    "Die Geschichte der Straße ist interessant.",
+    "Die Straßen sind in Europa bekannt.",
+    "Viele Menschen mögen die Straßen.",
+    "Das ist eine schöner Straße.",
+    "Ich besuche eine neuen Straße.",
+    "Die Straße liegt am Fluss.",
+    "In der Straße gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Straße\"?",
+    "richtig": "die",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "cadde",
+    "en": "street",
+    "ar": "شارع",
+    "es": "calle",
+    "fr": "rue",
+    "it": "strada",
+    "ru": "улица",
+    "pt": "rua",
+    "nl": "straat",
+    "pl": "ulica"
+  }
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "slug": "blume",
+    "wort": "Blume",
+    "artikel": "die",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "frau",
+    "wort": "Frau",
+    "artikel": "die",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "freundin",
+    "wort": "Freundin",
+    "artikel": "die",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "gabel",
+    "wort": "Gabel",
+    "artikel": "die",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "hand",
+    "wort": "Hand",
+    "artikel": "die",
+    "kategorie": "vucut"
+  },
+  {
+    "slug": "katze",
+    "wort": "Katze",
+    "artikel": "die",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "kuche",
+    "wort": "Küche",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "maus",
+    "wort": "Maus",
+    "artikel": "die",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "milch",
+    "wort": "Milch",
+    "artikel": "die",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "schule",
+    "wort": "Schule",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "sonne",
+    "wort": "Sonne",
+    "artikel": "die",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "stadt",
+    "wort": "Stadt",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "strasse",
+    "wort": "Straße",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "tur",
+    "wort": "Tür",
+    "artikel": "die",
+    "kategorie": "mobilya"
+  }
+]

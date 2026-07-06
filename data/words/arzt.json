@@ -1,0 +1,42 @@
+{
+  "slug": "arzt",
+  "wort": "Arzt",
+  "artikel": "der",
+  "plural": "Ärzte",
+  "genitiv_singular": "Arztes",
+  "kategorie": "insan",
+  "haeufigkeit_rang": 147,
+  "saetze": [
+    "Der Arzt arbeitet jeden Tag.",
+    "Ich kenne den Arzt.",
+    "Ich spreche mit dem Arzt.",
+    "Der Name des Arztes ist bekannt.",
+    "Die Ärzte treffen sich oft.",
+    "Wir helfen den Ärzte.",
+    "Das ist ein freundlicher Arzt.",
+    "Ich habe einen guten Arzt.",
+    "Der Arzt wohnt in der Stadt.",
+    "Ich vertraue dem Arzt."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Arzt\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "doktor",
+    "en": "doctor",
+    "ar": "طبيب",
+    "es": "médico",
+    "fr": "médecin",
+    "it": "medico",
+    "ru": "врач",
+    "pt": "médico",
+    "nl": "dokter",
+    "pl": "lekarz"
+  }
+}

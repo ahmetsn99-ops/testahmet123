@@ -1,0 +1,42 @@
+{
+  "slug": "garten",
+  "wort": "Garten",
+  "artikel": "der",
+  "plural": "Gärten",
+  "genitiv_singular": "Gartens",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 548,
+  "saetze": [
+    "Der Garten ist sehr groß.",
+    "Wir besuchen den Garten.",
+    "Ich wohne in dem Garten.",
+    "Die Geschichte des Gartens ist interessant.",
+    "Die Gärten sind in Europa bekannt.",
+    "Viele Menschen mögen die Gärten.",
+    "Das ist ein schöner Garten.",
+    "Ich besuche einen neuen Garten.",
+    "Der Garten liegt am Fluss.",
+    "In dem Garten gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Garten\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "bahçe",
+    "en": "garden",
+    "ar": "حديقة",
+    "es": "jardín",
+    "fr": "jardin",
+    "it": "giardino",
+    "ru": "сад",
+    "pt": "jardim",
+    "nl": "tuin",
+    "pl": "ogród"
+  }
+}

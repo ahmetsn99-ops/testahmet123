@@ -1,0 +1,42 @@
+{
+  "slug": "stuhl",
+  "wort": "Stuhl",
+  "artikel": "der",
+  "plural": "Stühle",
+  "genitiv_singular": "Stuhls",
+  "kategorie": "mobilya",
+  "haeufigkeit_rang": 630,
+  "saetze": [
+    "Der Stuhl steht im Zimmer.",
+    "Ich sehe den Stuhl.",
+    "Ich sitze an dem Stuhl.",
+    "Die Farbe des Stuhls ist braun.",
+    "Die Stühle stehen im Raum.",
+    "Wir kaufen die Stühle.",
+    "Das ist ein schöner Stuhl.",
+    "Ich brauche einen neuen Stuhl.",
+    "Der Stuhl ist aus Holz.",
+    "Neben dem Stuhl liegt ein Teppich."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Stuhl\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "sandalye",
+    "en": "chair",
+    "ar": "كرسي",
+    "es": "silla",
+    "fr": "chaise",
+    "it": "sedia",
+    "ru": "стул",
+    "pt": "cadeira",
+    "nl": "stoel",
+    "pl": "krzesło"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "slug": "fenster",
+  "wort": "Fenster",
+  "artikel": "das",
+  "plural": "Fenster",
+  "genitiv_singular": "Fensters",
+  "kategorie": "mobilya",
+  "haeufigkeit_rang": 221,
+  "saetze": [
+    "Das Fenster steht im Zimmer.",
+    "Ich sehe das Fenster.",
+    "Ich sitze an dem Fenster.",
+    "Die Farbe des Fensters ist braun.",
+    "Die Fenster stehen im Raum.",
+    "Wir kaufen die Fenster.",
+    "Das ist ein schöner Fenster.",
+    "Ich brauche ein neuen Fenster.",
+    "Das Fenster ist aus Holz.",
+    "Neben dem Fenster liegt ein Teppich."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Fenster\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "pencere",
+    "en": "window",
+    "ar": "نافذة",
+    "es": "ventana",
+    "fr": "fenêtre",
+    "it": "finestra",
+    "ru": "окно",
+    "pt": "janela",
+    "nl": "raam",
+    "pl": "okno"
+  }
+}

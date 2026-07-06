@@ -1,0 +1,42 @@
+{
+  "slug": "tee",
+  "wort": "Tee",
+  "artikel": "der",
+  "plural": "Tees",
+  "genitiv_singular": "Tees",
+  "kategorie": "yiyecek_icecek",
+  "haeufigkeit_rang": 347,
+  "saetze": [
+    "Der Tee schmeckt gut.",
+    "Ich mag den Tee.",
+    "Ich koche mit dem Tee.",
+    "Der Geschmack des Tees ist stark.",
+    "Die Tees stehen im Regal.",
+    "Wir kaufen die Tees.",
+    "Das ist ein frischer Tee.",
+    "Ich nehme einen neuen Tee.",
+    "Der Tee ist gesund.",
+    "Ohne den Tee schmeckt es nicht."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Tee\"?",
+    "richtig": "der",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "çay",
+    "en": "tea",
+    "ar": "شاي",
+    "es": "té",
+    "fr": "thé",
+    "it": "tè",
+    "ru": "чай",
+    "pt": "chá",
+    "nl": "thee",
+    "pl": "herbata"
+  }
+}

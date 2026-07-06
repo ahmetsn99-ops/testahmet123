@@ -1,34 +1,26 @@
-import type { MetadataRoute } from "next";
-import { getAllWords } from "@/data/woerter";
+import { MetadataRoute } from "next";
+import { getAllWordSlugs } from "@/lib/words";
+
+const BASE_URL = "https://www.artikelfinder.com";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://artikel-finder.example.de";
-  const woerter = getAllWords();
-
-  const wortSeiten: MetadataRoute.Sitemap = woerter.map((w) => ({
-    url: `${baseUrl}/${w.artikel}/${w.slug}`,
-    changeFrequency: "monthly",
+  const wordUrls = getAllWordSlugs().map((slug) => ({
+    url: `${BASE_URL}/artikel/${slug}`,
+    changeFrequency: "monthly" as const,
     priority: 0.8,
   }));
 
-  const kategorieSeiten: MetadataRoute.Sitemap = ["der", "die", "das"].map((artikel) => ({
-    url: `${baseUrl}/${artikel}`,
-    changeFrequency: "weekly",
-    priority: 0.9,
-  }));
+  const staticUrls = [
+    { url: BASE_URL, priority: 1.0 },
+    { url: `${BASE_URL}/kategorie/der`, priority: 0.9 },
+    { url: `${BASE_URL}/kategorie/die`, priority: 0.9 },
+    { url: `${BASE_URL}/kategorie/das`, priority: 0.9 },
+    { url: `${BASE_URL}/ratgeber/der-die-das-regeln`, priority: 0.7 },
+    { url: `${BASE_URL}/ueber-uns`, priority: 0.3 },
+    { url: `${BASE_URL}/kontakt`, priority: 0.3 },
+    { url: `${BASE_URL}/datenschutz`, priority: 0.2 },
+    { url: `${BASE_URL}/impressum`, priority: 0.2 },
+  ].map((u) => ({ ...u, changeFrequency: "monthly" as const }));
 
-  return [
-    {
-      url: baseUrl,
-      changeFrequency: "weekly",
-      priority: 1,
-    },
-    {
-      url: `${baseUrl}/ueber`,
-      changeFrequency: "yearly",
-      priority: 0.3,
-    },
-    ...kategorieSeiten,
-    ...wortSeiten,
-  ];
+  return [...staticUrls, ...wordUrls];
 }

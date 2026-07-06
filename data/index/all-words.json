@@ -1,0 +1,278 @@
+[
+  {
+    "slug": "apfel",
+    "wort": "Apfel",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "arzt",
+    "wort": "Arzt",
+    "artikel": "der",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "auge",
+    "wort": "Auge",
+    "artikel": "das",
+    "kategorie": "vucut"
+  },
+  {
+    "slug": "auto",
+    "wort": "Auto",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "baum",
+    "wort": "Baum",
+    "artikel": "der",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "bett",
+    "wort": "Bett",
+    "artikel": "das",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "blume",
+    "wort": "Blume",
+    "artikel": "die",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "brot",
+    "wort": "Brot",
+    "artikel": "das",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "buch",
+    "wort": "Buch",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "fenster",
+    "wort": "Fenster",
+    "artikel": "das",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "fisch",
+    "wort": "Fisch",
+    "artikel": "der",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "frau",
+    "wort": "Frau",
+    "artikel": "die",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "freund",
+    "wort": "Freund",
+    "artikel": "der",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "freundin",
+    "wort": "Freundin",
+    "artikel": "die",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "gabel",
+    "wort": "Gabel",
+    "artikel": "die",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "garten",
+    "wort": "Garten",
+    "artikel": "der",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "glas",
+    "wort": "Glas",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "hand",
+    "wort": "Hand",
+    "artikel": "die",
+    "kategorie": "vucut"
+  },
+  {
+    "slug": "haus",
+    "wort": "Haus",
+    "artikel": "das",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "hund",
+    "wort": "Hund",
+    "artikel": "der",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "kaffee",
+    "wort": "Kaffee",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "katze",
+    "wort": "Katze",
+    "artikel": "die",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "kind",
+    "wort": "Kind",
+    "artikel": "das",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "kopf",
+    "wort": "Kopf",
+    "artikel": "der",
+    "kategorie": "vucut"
+  },
+  {
+    "slug": "kuche",
+    "wort": "Küche",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "land",
+    "wort": "Land",
+    "artikel": "das",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "lehrer",
+    "wort": "Lehrer",
+    "artikel": "der",
+    "kategorie": "insan"
+  },
+  {
+    "slug": "loffel",
+    "wort": "Löffel",
+    "artikel": "der",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "maus",
+    "wort": "Maus",
+    "artikel": "die",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "messer",
+    "wort": "Messer",
+    "artikel": "das",
+    "kategorie": "esya"
+  },
+  {
+    "slug": "milch",
+    "wort": "Milch",
+    "artikel": "die",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "mond",
+    "wort": "Mond",
+    "artikel": "der",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "pferd",
+    "wort": "Pferd",
+    "artikel": "das",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "salz",
+    "wort": "Salz",
+    "artikel": "das",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "schule",
+    "wort": "Schule",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "sonne",
+    "wort": "Sonne",
+    "artikel": "die",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "stadt",
+    "wort": "Stadt",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "stern",
+    "wort": "Stern",
+    "artikel": "der",
+    "kategorie": "doga"
+  },
+  {
+    "slug": "strasse",
+    "wort": "Straße",
+    "artikel": "die",
+    "kategorie": "yer"
+  },
+  {
+    "slug": "stuhl",
+    "wort": "Stuhl",
+    "artikel": "der",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "tee",
+    "wort": "Tee",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "tisch",
+    "wort": "Tisch",
+    "artikel": "der",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "tur",
+    "wort": "Tür",
+    "artikel": "die",
+    "kategorie": "mobilya"
+  },
+  {
+    "slug": "vogel",
+    "wort": "Vogel",
+    "artikel": "der",
+    "kategorie": "hayvan"
+  },
+  {
+    "slug": "wasser",
+    "wort": "Wasser",
+    "artikel": "das",
+    "kategorie": "yiyecek_icecek"
+  },
+  {
+    "slug": "zucker",
+    "wort": "Zucker",
+    "artikel": "der",
+    "kategorie": "yiyecek_icecek"
+  }
+]

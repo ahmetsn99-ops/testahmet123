@@ -1,0 +1,42 @@
+{
+  "slug": "land",
+  "wort": "Land",
+  "artikel": "das",
+  "plural": "-",
+  "genitiv_singular": "Lands",
+  "kategorie": "yer",
+  "haeufigkeit_rang": 83,
+  "saetze": [
+    "Das Land ist sehr groß.",
+    "Wir besuchen das Land.",
+    "Ich wohne in dem Land.",
+    "Die Geschichte des Lands ist interessant.",
+    "Die Land sind in Europa bekannt.",
+    "Viele Menschen mögen die Land.",
+    "Das ist ein schöner Land.",
+    "Ich besuche ein neuen Land.",
+    "Das Land liegt am Fluss.",
+    "In dem Land gibt es viele Menschen."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Land\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "ülke",
+    "en": "country",
+    "ar": "بلد",
+    "es": "país",
+    "fr": "pays",
+    "it": "paese",
+    "ru": "страна",
+    "pt": "país",
+    "nl": "land",
+    "pl": "kraj"
+  }
+}

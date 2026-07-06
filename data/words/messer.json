@@ -1,0 +1,42 @@
+{
+  "slug": "messer",
+  "wort": "Messer",
+  "artikel": "das",
+  "plural": "Messer",
+  "genitiv_singular": "Messers",
+  "kategorie": "esya",
+  "haeufigkeit_rang": 397,
+  "saetze": [
+    "Das Messer liegt auf dem Tisch.",
+    "Ich benutze das Messer.",
+    "Ich schneide mit dem Messer.",
+    "Der Preis des Messers ist hoch.",
+    "Die Messer sind im Schrank.",
+    "Wir brauchen die Messer.",
+    "Das ist ein nützlicher Messer.",
+    "Ich kaufe ein neuen Messer.",
+    "Das Messer ist sehr praktisch.",
+    "Neben dem Messer liegt eine Serviette."
+  ],
+  "quiz": {
+    "frage": "Was ist der richtige Artikel für \"Messer\"?",
+    "richtig": "das",
+    "optionen": [
+      "das",
+      "der",
+      "die"
+    ]
+  },
+  "uebersetzungen": {
+    "tr": "bıçak",
+    "en": "knife",
+    "ar": "سكين",
+    "es": "cuchillo",
+    "fr": "couteau",
+    "it": "coltello",
+    "ru": "нож",
+    "pt": "faca",
+    "nl": "mes",
+    "pl": "nóż"
+  }
+}
